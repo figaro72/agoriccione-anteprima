@@ -1270,18 +1270,18 @@
 
 <script src="https://cdn.shopify.com/storefront/web-components/account.js" type="module" crossorigin fetchpriority="low" async></script><script id="shopify-customer-account-data" type="application/json">{"customer":null,"shop":{"id":"41797550241","customerAccountTranslations":[{"key":"account_menu.signed_out_state.sheet_title","value":"Accedi o crea un account"},{"key":"account_menu.signed_out_state.section_divider","value":"Altri metodi di accesso"},{"key":"account_menu.signed_out_state.alternate_divider","value":"OPPURE"},{"key":"account_menu.signed_out_state.email_field_label","value":"Email"},{"key":"account_menu.signed_out_state.orders_button","value":"Ordini"},{"key":"account_menu.signed_out_state.profile_button","value":"Profilo"},{"key":"account_menu.signed_out_state.shop_login_button","value":"Accedi con Shop"},{"key":"account_menu.signed_out_state.continue_with_google","value":"Continua con Google"},{"key":"account_menu.signed_out_state.continue_with_facebook","value":"Continua con Facebook"},{"key":"account_menu.signed_out_state.marketing_consent_label","value":"Inviami email con notizie e offerte"},{"key":"account_menu.signed_in_state.greeting_with_name","value":"Ciao {{first_name}}"},{"key":"account_menu.signed_in_state.greeting_without_name","value":"Account"},{"key":"account_menu.signed_in_state.orders_button","value":"Ordini"},{"key":"account_menu.signed_in_state.profile_button","value":"Profilo"},{"key":"account_menu.location_picker.sheet_title","value":"Sedi"},{"key":"account_menu.location_picker.search_field_placeholder","value":"Ricerca"},{"key":"account_menu.aria_labels.close_menu","value":"Chiudi menu"},{"key":"account_menu.aria_labels.back_to_main_menu","value":"Torna al menu principale da {{title}}"},{"key":"account_menu.aria_labels.open_submenu","value":"{{title}}, apre il sottomenu"},{"key":"account_menu.aria_labels.loading_menu","value":"Caricamento menu"},{"key":"account_menu.aria_labels.loading","value":"Caricamento"},{"key":"account_menu.aria_labels.account","value":"Account"},{"key":"account_menu.aria_labels.sign_in_with_email","value":"Accedi con l'email"},{"key":"account_menu.aria_labels.sign_in","value":"Accedi"}],"socialLoginProviders":[{"handle":"Shop"}],"legacyCustomerAccounts":false,"signInLinksVisible":true,"b2bEnabled":false,"marketingConsentSigninEnabled":true,"marketingConsentPreselected":false},"visitor":{"country":"IT","language":"it"}}</script>
 <meta name="shopify-y" content="058ef496-1d6d-4975-8a73-e5c48257e76a" data-expiration="1824612487000"><meta name="shopify-s" content="e8b56501-4a3e-4bbe-b8bd-16d71a218e00" data-expiration="1793056687000"><style>
-.ago-gallery{display:flex;gap:14px;align-items:flex-start;width:100%;position:sticky;top:calc(var(--header-height,80px) + 12px)}
-.ago-gallery__thumbs{display:flex;flex-direction:column;gap:10px;flex:0 0 68px}
+.ago-gallery{display:flex;gap:14px;justify-content:flex-start;align-items:flex-start;width:100%;position:sticky;top:calc(var(--header-height,80px) + 12px)}
+.ago-gallery__thumbs{display:flex;flex-direction:column;gap:10px;flex:0 0 68px;order:2}
 .ago-gallery__thumb{padding:0;border:1px solid transparent;background:none;cursor:pointer;aspect-ratio:2/3;overflow:hidden;opacity:.55;transition:opacity .15s,border-color .15s}
 .ago-gallery__thumb img{display:block;width:100%;height:100%;object-fit:cover}
 .ago-gallery__thumb:hover,.ago-gallery__thumb[aria-current="true"]{opacity:1}
 .ago-gallery__thumb[aria-current="true"]{border-color:#000}
-.ago-gallery__main{flex:1;min-width:0;display:flex;justify-content:flex-start}
+.ago-gallery__main{flex:0 1 auto;min-width:0;order:1;display:flex;justify-content:flex-start}
 .ago-gallery__frame{position:relative;overflow:hidden;aspect-ratio:2/3;height:min(calc(100vh - var(--header-height,80px) - 40px),900px);max-width:100%;cursor:zoom-in;background:#f4f4f4}
 .ago-gallery__frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .2s ease-out;will-change:transform}
 .ago-gallery__frame.is-zoomed img{transform:scale(2.2)}
 @media (max-width:749px){
-  .ago-gallery{flex-direction:column-reverse;position:static;gap:10px}
+  .ago-gallery{flex-direction:column;position:static;gap:10px}
   .ago-gallery__thumbs{flex-direction:row;flex:none;width:100%;justify-content:center}
   .ago-gallery__thumb{width:56px}
   .ago-gallery__frame{height:auto;width:100%;cursor:default}
