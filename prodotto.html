@@ -1281,10 +1281,10 @@
 .ago-gallery__frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .2s ease-out;will-change:transform}
 .ago-gallery__frame.is-zoomed img{transform:scale(2.2)}
 @media (max-width:749px){
-  .ago-gallery{flex-direction:column;position:static;gap:10px}
-  .ago-gallery__thumbs{flex-direction:row;flex:none;width:100%;justify-content:center}
-  .ago-gallery__thumb{width:56px}
-  .ago-gallery__main{flex:none;width:100%;display:block}
+  /* stessa logica del desktop: foto grande + miniature in colonna a destra */
+  .ago-gallery{position:static;gap:8px}
+  .ago-gallery__thumbs{flex:0 0 52px;gap:8px}
+  .ago-gallery__main{flex:1 1 auto;min-width:0;display:block}
   .ago-gallery__frame{height:auto;width:100%;cursor:default}
   .ago-gallery__frame.is-zoomed img{transform:none}
 }
