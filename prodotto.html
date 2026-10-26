@@ -1269,7 +1269,25 @@
 
 
 <script src="https://cdn.shopify.com/storefront/web-components/account.js" type="module" crossorigin fetchpriority="low" async></script><script id="shopify-customer-account-data" type="application/json">{"customer":null,"shop":{"id":"41797550241","customerAccountTranslations":[{"key":"account_menu.signed_out_state.sheet_title","value":"Accedi o crea un account"},{"key":"account_menu.signed_out_state.section_divider","value":"Altri metodi di accesso"},{"key":"account_menu.signed_out_state.alternate_divider","value":"OPPURE"},{"key":"account_menu.signed_out_state.email_field_label","value":"Email"},{"key":"account_menu.signed_out_state.orders_button","value":"Ordini"},{"key":"account_menu.signed_out_state.profile_button","value":"Profilo"},{"key":"account_menu.signed_out_state.shop_login_button","value":"Accedi con Shop"},{"key":"account_menu.signed_out_state.continue_with_google","value":"Continua con Google"},{"key":"account_menu.signed_out_state.continue_with_facebook","value":"Continua con Facebook"},{"key":"account_menu.signed_out_state.marketing_consent_label","value":"Inviami email con notizie e offerte"},{"key":"account_menu.signed_in_state.greeting_with_name","value":"Ciao {{first_name}}"},{"key":"account_menu.signed_in_state.greeting_without_name","value":"Account"},{"key":"account_menu.signed_in_state.orders_button","value":"Ordini"},{"key":"account_menu.signed_in_state.profile_button","value":"Profilo"},{"key":"account_menu.location_picker.sheet_title","value":"Sedi"},{"key":"account_menu.location_picker.search_field_placeholder","value":"Ricerca"},{"key":"account_menu.aria_labels.close_menu","value":"Chiudi menu"},{"key":"account_menu.aria_labels.back_to_main_menu","value":"Torna al menu principale da {{title}}"},{"key":"account_menu.aria_labels.open_submenu","value":"{{title}}, apre il sottomenu"},{"key":"account_menu.aria_labels.loading_menu","value":"Caricamento menu"},{"key":"account_menu.aria_labels.loading","value":"Caricamento"},{"key":"account_menu.aria_labels.account","value":"Account"},{"key":"account_menu.aria_labels.sign_in_with_email","value":"Accedi con l'email"},{"key":"account_menu.aria_labels.sign_in","value":"Accedi"}],"socialLoginProviders":[{"handle":"Shop"}],"legacyCustomerAccounts":false,"signInLinksVisible":true,"b2bEnabled":false,"marketingConsentSigninEnabled":true,"marketingConsentPreselected":false},"visitor":{"country":"IT","language":"it"}}</script>
-<meta name="shopify-y" content="058ef496-1d6d-4975-8a73-e5c48257e76a" data-expiration="1824612487000"><meta name="shopify-s" content="e8b56501-4a3e-4bbe-b8bd-16d71a218e00" data-expiration="1793056687000"><style>media-gallery .media-gallery__grid .product-media-container:first-child img{object-position:50% 25%}</style></head>
+<meta name="shopify-y" content="058ef496-1d6d-4975-8a73-e5c48257e76a" data-expiration="1824612487000"><meta name="shopify-s" content="e8b56501-4a3e-4bbe-b8bd-16d71a218e00" data-expiration="1793056687000"><style>
+.ago-gallery{display:flex;gap:14px;align-items:flex-start;width:100%;position:sticky;top:calc(var(--header-height,80px) + 12px)}
+.ago-gallery__thumbs{display:flex;flex-direction:column;gap:10px;flex:0 0 68px}
+.ago-gallery__thumb{padding:0;border:1px solid transparent;background:none;cursor:pointer;aspect-ratio:2/3;overflow:hidden;opacity:.55;transition:opacity .15s,border-color .15s}
+.ago-gallery__thumb img{display:block;width:100%;height:100%;object-fit:cover}
+.ago-gallery__thumb:hover,.ago-gallery__thumb[aria-current="true"]{opacity:1}
+.ago-gallery__thumb[aria-current="true"]{border-color:#000}
+.ago-gallery__main{flex:1;min-width:0;display:flex;justify-content:flex-start}
+.ago-gallery__frame{position:relative;overflow:hidden;aspect-ratio:2/3;height:min(calc(100vh - var(--header-height,80px) - 40px),900px);max-width:100%;cursor:zoom-in;background:#f4f4f4}
+.ago-gallery__frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .2s ease-out;will-change:transform}
+.ago-gallery__frame.is-zoomed img{transform:scale(2.2)}
+@media (max-width:749px){
+  .ago-gallery{flex-direction:column-reverse;position:static;gap:10px}
+  .ago-gallery__thumbs{flex-direction:row;flex:none;width:100%;justify-content:center}
+  .ago-gallery__thumb{width:56px}
+  .ago-gallery__frame{height:auto;width:100%;cursor:default}
+  .ago-gallery__frame.is-zoomed img{transform:none}
+}
+</style></head>
 
   <body class="page-width-narrow card-hover-effect-none">
     <a
@@ -18144,190 +18162,32 @@ none;
 </style>
 
 
-  <media-gallery
-    class="
-      spacing-style
-      sticky-content
-      
-        media-gallery--two-column media-gallery--large-first-image
-        
-      
-      media-gallery--grid
-      
-      
-    "
-    style="--padding-block-start: 0px;--padding-block-end: 0px;--padding-inline-start: 0px;--padding-inline-end: 0px; --thumbnail-width: 44px; --media-radius: 0px;--image-gap: 4px;"
-    data-presentation="grid"
-    
-  >
-    
-
-    
-
-    
-
-    <slideshow-component
-  
-    ref="slideshow"
-  
-  
-    class=""
-  
-  style="--slideshow-timeline: --slide-0;--slide-min-height: auto;--slide-min-height-desktop: auto;"
-  
-  initial-slide="0"
-  
-  
-    infinite
-  
-
-  
->
-  
-  <slideshow-container
-    ref="slideshowContainer"
-    
-      animate-arrows
-    
-  >
-    
-    
-    <slideshow-slide ref="slides[]" aria-hidden="false" style="--slideshow-timeline: --slide-0; --product-media-fit: cover; --media-preview-ratio: 0.681;" class="product-media-container media-fit-cover product-media-container--image">
-<div class="product-media" style="--ratio: 0.681" data-media-id="anteprima-0">
-  <img src="img/ago-sangallo-1.jpg" alt="A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - foto 1" width="1394" height="2048" class="product-media__image" fetchpriority="high" style="--focal-point: 50.0% 50.0%;">
+  <div class="ago-gallery sticky-content" data-ago-gallery>
+<div class="ago-gallery__thumbs" role="group" aria-label="Foto del prodotto">
+<button type="button" class="ago-gallery__thumb" data-i="0" aria-label="Foto 1: figura intera" aria-current="true"><img src="img/ago-sangallo-1.jpg" alt="" loading="eager"></button>
+<button type="button" class="ago-gallery__thumb" data-i="1" aria-label="Foto 2: primo piano"><img src="img/ago-sangallo-3.jpg" alt="" loading="lazy"></button>
+<button type="button" class="ago-gallery__thumb" data-i="2" aria-label="Foto 3: profilo"><img src="img/ago-sangallo-2.jpg" alt="" loading="lazy"></button>
+<button type="button" class="ago-gallery__thumb" data-i="3" aria-label="Foto 4: schiena"><img src="img/ago-sangallo-4.jpg" alt="" loading="lazy"></button>
+<button type="button" class="ago-gallery__thumb" data-i="4" aria-label="Foto 5: dettaglio etichetta"><img src="img/ago-sangallo-5.jpg" alt="" loading="lazy"></button>
 </div>
-</slideshow-slide>
-<slideshow-slide ref="slides[]" aria-hidden="true" style="--slideshow-timeline: --slide-1; --product-media-fit: cover; --media-preview-ratio: 0.668;" class="product-media-container media-fit-cover product-media-container--image">
-<div class="product-media" style="--ratio: 0.668" data-media-id="anteprima-1">
-  <img src="img/ago-sangallo-3.jpg" alt="A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - foto 2" width="1368" height="2048" class="product-media__image" loading="lazy" style="--focal-point: 50.0% 50.0%;">
+<div class="ago-gallery__main"><div class="ago-gallery__frame"><img src="img/ago-sangallo-1.jpg" alt="A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - figura intera" fetchpriority="high"></div></div>
 </div>
-</slideshow-slide>
-<slideshow-slide ref="slides[]" aria-hidden="true" style="--slideshow-timeline: --slide-2; --product-media-fit: cover; --media-preview-ratio: 0.668;" class="product-media-container media-fit-cover product-media-container--image">
-<div class="product-media" style="--ratio: 0.668" data-media-id="anteprima-2">
-  <img src="img/ago-sangallo-2.jpg" alt="A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - foto 3" width="1368" height="2048" class="product-media__image" loading="lazy" style="--focal-point: 50.0% 50.0%;">
-</div>
-</slideshow-slide>
-<slideshow-slide ref="slides[]" aria-hidden="true" style="--slideshow-timeline: --slide-3; --product-media-fit: cover; --media-preview-ratio: 0.752;" class="product-media-container media-fit-cover product-media-container--image">
-<div class="product-media" style="--ratio: 0.752" data-media-id="anteprima-3">
-  <img src="img/ago-sangallo-4.jpg" alt="A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - foto 4" width="1540" height="2048" class="product-media__image" loading="lazy" style="--focal-point: 50.0% 50.0%;">
-</div>
-</slideshow-slide>
-<slideshow-slide ref="slides[]" aria-hidden="true" style="--slideshow-timeline: --slide-4; --product-media-fit: cover; --media-preview-ratio: 0.668;" class="product-media-container media-fit-cover product-media-container--image">
-<div class="product-media" style="--ratio: 0.668" data-media-id="anteprima-4">
-  <img src="img/ago-sangallo-5.jpg" alt="A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - foto 5" width="1368" height="2048" class="product-media__image" loading="lazy" style="--focal-point: 50.0% 50.0%;">
-</div>
-</slideshow-slide>
-
-
-
-
-      
-    
-    </slideshow-slides>
-  </slideshow-container>
-  
-</slideshow-component>
-
-
-
-
-
-    
-      <ul
-        class="media-gallery__grid list-unstyled"
-        data-testid="media-gallery-grid"
-      >
-        
-          <li class="product-media-container media-fit-cover product-media-container--image" style="--media-preview-ratio: 0.750; --media-radius: 0px;">
-<div class="product-media" style="--ratio: 0.750" data-media-id="anteprima-0">
-  <img src="img/ago-sangallo-1.jpg" alt="A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - foto 1" width="1394" height="2048" class="product-media__image" fetchpriority="high" style="--focal-point: 50.0% 50.0%;">
-</div>
-</li>
-<li class="product-media-container media-fit-cover product-media-container--image" style="--media-preview-ratio: 0.668; --media-radius: 0px;">
-<div class="product-media" style="--ratio: 0.668" data-media-id="anteprima-1">
-  <img src="img/ago-sangallo-3.jpg" alt="A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - foto 2" width="1368" height="2048" class="product-media__image" loading="lazy" style="--focal-point: 50.0% 50.0%;">
-</div>
-</li>
-<li class="product-media-container media-fit-cover product-media-container--image" style="--media-preview-ratio: 0.668; --media-radius: 0px;">
-<div class="product-media" style="--ratio: 0.668" data-media-id="anteprima-2">
-  <img src="img/ago-sangallo-2.jpg" alt="A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - foto 3" width="1368" height="2048" class="product-media__image" loading="lazy" style="--focal-point: 50.0% 50.0%;">
-</div>
-</li>
-<li class="product-media-container media-fit-cover product-media-container--image" style="--media-preview-ratio: 0.668; --media-radius: 0px;">
-<div class="product-media" style="--ratio: 0.668" data-media-id="anteprima-3">
-  <img src="img/ago-sangallo-4.jpg" alt="A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - foto 4" width="1540" height="2048" class="product-media__image" loading="lazy" style="--focal-point: 50.0% 50.0%;">
-</div>
-</li>
-<li class="product-media-container media-fit-cover product-media-container--image" style="--media-preview-ratio: 0.668; --media-radius: 0px;">
-<div class="product-media" style="--ratio: 0.668" data-media-id="anteprima-4">
-  <img src="img/ago-sangallo-5.jpg" alt="A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - foto 5" width="1368" height="2048" class="product-media__image" loading="lazy" style="--focal-point: 50.0% 50.0%;">
-</div>
-</li>
-        
-      </ul>
-    <zoom-dialog
-        ref="zoomDialogComponent"
-        id="zoom-dialog-AVUtaRE5Sa0VQL2JMU__media-gallery"
-      >
-        <dialog
-          class="dialog-zoomed-gallery__dialog"
-          ref="dialog"
-          on:keydown="/handleKeyDown"
-          scroll-lock
-        >
-          <button
-            type="button"
-            class="button button-unstyled close-button dialog-zoomed-gallery__close-button"
-            aria-label="Chiudi"
-            on:click="/close"
-          >
-            <span class="visually-hidden">Chiudi</span>
-            <svg aria-hidden="true" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M11.1765 12.025C11.4108 12.2594 11.7907 12.2594 12.025 12.025C12.2594 11.7907 12.2594 11.4108 12.025 11.1765L8.84931 8.00078L12.025 4.82505C12.2594 4.59073 12.2594 4.21083 12.025 3.97652C11.7907 3.7422 11.4108 3.7422 11.1765 3.97652L8.00078 7.15225L4.82505 3.97652C4.59073 3.7422 4.21083 3.7422 3.97652 3.97652C3.7422 4.21083 3.7422 4.59073 3.97652 4.82505L7.15225 8.00078L3.97652 11.1765C3.7422 11.4108 3.7422 11.7907 3.97652 12.025C4.21083 12.2594 4.59073 12.2594 4.82505 12.025L8.00078 8.84931L11.1765 12.025Z" fill="currentColor"/>
-</svg>
-
-          </button>
-          <div class="dialog-thumbnails-list-container">
-            <scroll-hint
-              class="dialog-thumbnails-list list-unstyled"
-              ref="thumbnails"
-            >
-              
-            </scroll-hint>
-          </div>
-          <ul
-            class="dialog-zoomed-gallery list-unstyled"
-          ><li
-                id="product-70975477940558-1"
-                class="product-media-container constrain-height media-fit-contain product-media-container--image product-media-container--zoomable"
-                style=" --media-preview-ratio: 1.0;"
-                ref="media[]"
-                
-                  on:click="/close"
-                
-              >
-                
-                  <drag-zoom-wrapper class="product-media__drag-zoom-wrapper">
-
-<div
-  class="product-media"
-  style="--ratio: 1.0"
-  data-media-id="70975477940558"
->
-  
-  <img src="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG-9790.jpg?v=1775726365&amp;width=3840" alt="A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order)" srcset="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG-9790.jpg?v=1775726365&amp;width=240 240w, /cdn/shop/files/IMG-9790.jpg?v=1775726365&amp;width=352 352w, /cdn/shop/files/IMG-9790.jpg?v=1775726365&amp;width=640 640w, /cdn/shop/files/IMG-9790.jpg?v=1775726365&amp;width=832 832w, /cdn/shop/files/IMG-9790.jpg?v=1775726365&amp;width=1200 1200w, /cdn/shop/files/IMG-9790.jpg?v=1775726365&amp;width=1600 1600w, /cdn/shop/files/IMG-9790.jpg?v=1775726365&amp;width=1920 1920w, /cdn/shop/files/IMG-9790.jpg?v=1775726365&amp;width=2560 2560w, /cdn/shop/files/IMG-9790.jpg?v=1775726365&amp;width=3840 3840w" width="3840" height="3840" loading="lazy" sizes="100vw" class="product-media__image" ref="image" data_max_resolution="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG-9790.jpg?v=1775726365&amp;width=3840" fetchpriority="high" style="--focal-point: 50.0% 50.0%;">
-
-  
-  
-</div>
-
-
-
-</drag-zoom-wrapper>
-                
-              </li></ul>
-        </dialog>
-      </zoom-dialog></media-gallery>
+<script>
+(function(){
+  var root=document.querySelector('[data-ago-gallery]'); if(!root) return;
+  var data=[{"src":"img/ago-sangallo-1.jpg","alt":"A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - figura intera"},{"src":"img/ago-sangallo-3.jpg","alt":"A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - primo piano"},{"src":"img/ago-sangallo-2.jpg","alt":"A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - profilo"},{"src":"img/ago-sangallo-4.jpg","alt":"A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - schiena"},{"src":"img/ago-sangallo-5.jpg","alt":"A. AMERICAN WHITE SANGALLO JUMPSUIT (pre-order) - dettaglio etichetta"}];
+  var frame=root.querySelector('.ago-gallery__frame'), img=frame.querySelector('img');
+  var thumbs=[].slice.call(root.querySelectorAll('.ago-gallery__thumb'));
+  function show(i){var d=data[i]; img.src=d.src; img.alt=d.alt; thumbs.forEach(function(t,k){if(k===i)t.setAttribute('aria-current','true');else t.removeAttribute('aria-current');});}
+  var canHover=window.matchMedia('(hover:hover) and (min-width:750px)').matches;
+  thumbs.forEach(function(t,i){t.addEventListener('click',function(){show(i)}); if(canHover)t.addEventListener('mouseenter',function(){show(i)});});
+  if(canHover){
+    frame.addEventListener('mouseenter',function(){frame.classList.add('is-zoomed')});
+    frame.addEventListener('mouseleave',function(){frame.classList.remove('is-zoomed');img.style.transformOrigin='50% 50%'});
+    frame.addEventListener('mousemove',function(e){var r=frame.getBoundingClientRect();img.style.transformOrigin=((e.clientX-r.left)/r.width*100)+'% '+((e.clientY-r.top)/r.height*100)+'%';});
+  }
+})();
+</script>
 
 
 
