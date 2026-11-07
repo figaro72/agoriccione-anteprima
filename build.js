@@ -10,6 +10,9 @@ h = h.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi, (m) => { if (bad.test(m) &&
 h = h.replace(/<link\b[^>]*>/gi, (m) => (/portable-wallets|accelerated-checkout|shopify_pay|checkouts\/internal|\.well-known/i.test(m) ? '' : m));
 
 // 2. indirizzi dei file -> CDN pubblico di Shopify
+// raw.html scaricato da agoriccione.com/?preview_theme_id=... (vedi aggiorna.sh) ha i file su //agoriccione.com/cdn/:
+// li porto alla stessa forma del vecchio dominio di anteprima, così valgono le regole sotto
+h = h.split('//agoriccione.com/cdn/').join('//' + PV + '/cdn/');
 h = h.split('//' + PV + '/cdn/shop/').join(CDN.replace('https:', '') );
 h = h.split('https:' + CDN.replace('https:', '')).join(CDN);
 h = h.replace(new RegExp('(https?:)?//' + PV.replace(/\./g, '\.') + '/cdn/fonts/', 'g'), 'https://fonts.shopifycdn.com/');

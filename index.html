@@ -7,7 +7,8 @@
   <head>
 <meta name="robots" content="noindex, nofollow">
 <base target="_blank">
-<script>(function(){var f=window.fetch;window.fetch=function(u){var s=typeof u==="string"?u:(u&&u.url)||"";if(s.indexOf("http")!==0||s.indexOf(location.origin)===0){return Promise.reject(new Error("anteprima statica"))}return f.apply(this,arguments)};var o=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(m,u){if(String(u).indexOf("http")!==0||String(u).indexOf(location.origin)===0){u="data:,"}return o.apply(this,arguments)}})();</script><script data-source-attribution="shopify.exit_interstitial">(()=>{var s=Function.prototype.bind.bind(Function.prototype.call),L=(r,o)=>{for(let a=r;a;a=Object.getPrototypeOf(a)){let u=Object.getOwnPropertyDescriptor(a,o);if(u)return u}throw new TypeError(`${o} is not defined`)},i=(r,o)=>s(L(r,o).get),k=(r,o)=>s(L(r,o).set);var Ct=s(String.prototype.endsWith),f=s(RegExp.prototype.exec),Tt=/^_(self|top|parent)$/i,Dt=/(^|\s)noreferrer(\s|$)/i,A=/^(no-referrer(-when-downgrade)?|same-origin|(strict-)?origin(-when-cross-origin)?|unsafe-url)$/i,$t=/^(never|default|always|origin-when-crossorigin)$/i,C=/^(no-referrer|same-origin|never)$/i,T=r=>{let o=`.${r}`;return a=>a===r||Ct(a,o)},D=(r,o,a)=>r!==void 0&&(r.protocol==="https:"||r.protocol==="http:")&&r.origin!==o&&!a(r.hostname),$=(r,o,a)=>r!==null&&f(Dt,r)!==null?!0:o!==null&&f(A,o)!==null?f(C,o)!==null:a,K=(r,o)=>f(A,r)!==null||f($t,r)!==null?f(C,r)!==null:o,M=(r,{metaKey:o,ctrlKey:a,shiftKey:u,button:y})=>r&&f(Tt,r)===null?r:o||a||u||y===1?"_blank":"";var Kt="http://www.w3.org/2000/svg",Mt="http://www.w3.org/1999/xlink";function U(r){let o=window;if(o.top!==o)return;let a=document,u=o.navigation,y=location.origin,d=URL,E=i(d.prototype,"href"),W=i(d.prototype,"origin"),B=i(d.prototype,"protocol"),F=i(d.prototype,"hostname"),h=s(Event.prototype.preventDefault),q=s(Event.prototype.stopPropagation),b=s(Event.prototype.stopImmediatePropagation),H=s(Event.prototype.composedPath),Y=i(Event.prototype,"type"),j=i(Event.prototype,"cancelable"),G=i(Event.prototype,"defaultPrevented"),V=i(Event.prototype,"bubbles"),X=i(Event.prototype,"cancelBubble"),z=k(Event.prototype,"cancelBubble"),J=i(MouseEvent.prototype,"button"),Q=i(MouseEvent.prototype,"metaKey"),Z=i(MouseEvent.prototype,"ctrlKey"),tt=i(MouseEvent.prototype,"shiftKey"),et=u&&i(NavigateEvent.prototype,"destination"),ot=u&&i(NavigationDestination.prototype,"url"),R=u&&i(NavigateEvent.prototype,"navigationType"),nt=u&&i(NavigateEvent.prototype,"formData"),g=s(Element.prototype.getAttribute),rt=s(Element.prototype.getAttributeNS),st=i(Element.prototype,"localName"),it=i(Element.prototype,"namespaceURI"),ct=s(Document.prototype.querySelector),at=s(Document.prototype.querySelectorAll),lt=i(NodeList.prototype,"length"),pt=s(NodeList.prototype.item),ut=i(Node.prototype,"baseURI"),ft=s(o.open),dt=s(location.assign),gt=s(location.replace),yt=encodeURIComponent,_t=s(String.prototype.startsWith),m=s(o.setTimeout),mt=s(o.addEventListener),Et=s(o.removeEventListener),v=Object.defineProperties,ht=T(r.site),N=E(new d(r.exitPath,y)),bt=`${N}?`,S=(t,e)=>{try{let n=new d(t,e);return{href:E(n),origin:W(n),protocol:B(n),hostname:F(n)}}catch{return}},Rt=(t,e,n)=>{let c=n?"&noreferrer=1":"";return`${N}?q=${yt(t.href)}&trigger=${e}${c}`},w=()=>{let t=at(a,'meta[name="referrer" i][content]'),e=!1;for(let n=0;n<lt(t);n+=1)e=K(g(pt(t,n),"content"),e);return e},P=(t,e,{target:n,noReferrer:c,replaces:l})=>{let p=Rt(t,e,c);if(n){ft(o,p,n,"noopener");return}(l?gt:dt)(location,p)},_,vt=(t,e)=>{_={href:t.href,noReferrer:e},m(o,()=>{_=void 0},0)},x=t=>D(t,y,ht),Nt=t=>t!==void 0&&_t(t.href,bt),St=t=>{let e=S(ot(et(t)));if(Nt(e)){b(t);return}if(!j(t)||R(t)==="traverse"||!x(e)||nt(t)!==null)return;h(t);let n=_;_=void 0;let c={target:"",noReferrer:n!==void 0&&n.href===e.href?n.noReferrer:w(),replaces:R(t)==="replace"};P(e,"navigate",c)},wt=t=>{try{return st(t)}catch{return}},Pt=t=>{let e=g(t,"href");return e===null&&it(t)===Kt?rt(t,Mt,"href"):e},xt=t=>{let e=H(t);for(let n=0;n<e.length;n+=1){let c=e[n],l=wt(c);if(l==="a"||l==="area"){let p=Pt(c);if(p!==null)return{node:c,href:p}}}},Ot=t=>{let e=g(t,"target");if(e!==null)return e;let n=ct(a,"base[target]");return n?g(n,"target"):""},It=t=>{try{return{metaKey:Q(t),ctrlKey:Z(t),shiftKey:tt(t),button:J(t)}}catch{return}},Lt=t=>{let e=!1,n=()=>{e=!0};return v(t,{__proto__:null,preventDefault:{__proto__:null,configurable:!0,value:n},defaultPrevented:{__proto__:null,configurable:!0,get:()=>e},returnValue:{__proto__:null,configurable:!0,get:()=>!e,set:c=>{c||n()}}}),()=>e},kt=(t,e,n)=>{let c=!1,l=()=>{if(c||(c=!0,G(t)))return;h(t);let p=Lt(t);m(o,()=>{p()||n()},0)};if(!V(t)){l();return}mt(o,e,l,{__proto__:null,once:!0}),m(o,()=>{c=!0,Et(o,e,l)},0),v(t,{__proto__:null,stopPropagation:{__proto__:null,configurable:!0,value:()=>{l(),q(t)}},stopImmediatePropagation:{__proto__:null,configurable:!0,value:()=>{l(),b(t)}},cancelBubble:{__proto__:null,configurable:!0,get:()=>X(t),set:p=>{p&&l(),z(t,p)}}})},O=t=>{let e=Y(t),n=It(t);if(!n||e==="auxclick"&&n.button!==1)return;let c=xt(t);if(!c)return;let l=S(c.href,ut(a));if(!x(l))return;let p=$(g(c.node,"rel"),g(c.node,"referrerpolicy"),w()),I=M(Ot(c.node),n);if(!I&&u){vt(l,p);return}let At={target:I,noReferrer:p,replaces:!1};kt(t,e,()=>P(l,e,At))};u?.addEventListener("navigate",St,!0),o.addEventListener("click",O,!0),o.addEventListener("auxclick",O,!0)}U({"site":"3sjfcrxmusenrro3-41797550241.shopifypreview.com","exitPath":"\/url"});})();
+<script>(function(){var f=window.fetch;window.fetch=function(u){var s=typeof u==="string"?u:(u&&u.url)||"";if(s.indexOf("http")!==0||s.indexOf(location.origin)===0){return Promise.reject(new Error("anteprima statica"))}return f.apply(this,arguments)};var o=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(m,u){if(String(u).indexOf("http")!==0||String(u).indexOf(location.origin)===0){u="data:,"}return o.apply(this,arguments)}})();</script><script data-source-attribution="shopify.exit_interstitial">(()=>{var s=Function.prototype.bind.bind(Function.prototype.call),Wt=(i,c)=>{for(let d=i;d;d=Object.getPrototypeOf(d)){let h=Object.getOwnPropertyDescriptor(d,c);if(h)return h}throw new TypeError(`${c} is not defined`)},a=(i,c)=>s(Wt(i,c).get),H=(i,c)=>s(Wt(i,c).set);var It=s(String.prototype.endsWith),cn=s(String.prototype.slice),S=s(RegExp.prototype.exec),an=/^_(self|top|parent)$/i,ln=/(^|\s)noreferrer(\s|$)/i,Ct=/^(no-referrer(-when-downgrade)?|same-origin|(strict-)?origin(-when-cross-origin)?|unsafe-url)$/i,un=/^(never|default|always|origin-when-crossorigin)$/i,Ft=/^(no-referrer|same-origin|never)$/i,pn=/\s(musical_ly|trill)_|\sBytedanceWebview\//,Tt=i=>It(i,".")?cn(i,0,-1):i,Mt=i=>{let c=Tt(i),d=`.${c}`;return h=>{let _=Tt(h);return _===c||It(_,d)}},Dt=(i,c,d)=>i!==void 0&&(i.protocol==="https:"||i.protocol==="http:")&&i.origin!==c&&!d(i.hostname),nt=(i,c,d)=>i!==null&&S(ln,i)!==null?!0:c!==null&&S(Ct,c)!==null?S(Ft,c)!==null:d,Ht=(i,c)=>S(Ct,i)!==null||S(un,i)!==null?S(Ft,i)!==null:c,W=(i,{metaKey:c,ctrlKey:d,shiftKey:h,button:_})=>i&&S(an,i)===null?i:c||d||h||_===1?"_blank":"",Ut=i=>S(pn,i)!==null;var fn="http://www.w3.org/2000/svg",dn="http://www.w3.org/1999/xlink",ot=["rel","referrerpolicy","download","ping","hreflang","type"],gn=Object.freeze({__proto__:null,metaKey:!1,ctrlKey:!1,shiftKey:!1,button:0});function Kt(i){let c=window;if(c.top!==c)return;let d=document,h=c.navigation,_=location.origin,b=URL,U=a(b.prototype,"href"),$t=a(b.prototype,"origin"),Bt=a(b.prototype,"protocol"),qt=a(b.prototype,"hostname"),Gt=H(b.prototype,"search"),rt=FormData,Yt=URLSearchParams,jt=s(URLSearchParams.prototype.toString),Vt=s(URLSearchParams.prototype.append),st=s(Event.prototype.preventDefault),zt=s(Event.prototype.stopPropagation),ct=s(Event.prototype.stopImmediatePropagation),K=s(Event.prototype.composedPath),Xt=a(Event.prototype,"type"),Jt=a(Event.prototype,"target"),it=typeof SubmitEvent=="function"?a(SubmitEvent.prototype,"submitter"):void 0,Qt=typeof File=="function"?a(File.prototype,"name"):void 0,Zt=a(HTMLButtonElement.prototype,"form"),te=a(HTMLInputElement.prototype,"form"),ee=a(Event.prototype,"cancelable"),at=a(Event.prototype,"defaultPrevented"),ne=a(Event.prototype,"bubbles"),oe=a(Event.prototype,"currentTarget"),re=a(Event.prototype,"eventPhase"),{CAPTURING_PHASE:se}=Event,lt=a(Event.prototype,"cancelBubble"),ce=H(Event.prototype,"cancelBubble"),ie=a(MouseEvent.prototype,"button"),ae=a(MouseEvent.prototype,"metaKey"),le=a(MouseEvent.prototype,"ctrlKey"),ue=a(MouseEvent.prototype,"shiftKey"),pe=h&&a(NavigateEvent.prototype,"destination"),fe=h&&a(NavigationDestination.prototype,"url"),ut=h&&a(NavigateEvent.prototype,"navigationType"),de=h&&a(NavigateEvent.prototype,"formData"),pt=h&&"sourceElement"in NavigateEvent.prototype?a(NavigateEvent.prototype,"sourceElement"):void 0,w=s(Element.prototype.getAttribute),ge=s(Element.prototype.getAttributeNS),$=s(Element.prototype.setAttribute),ye=a(Element.prototype,"localName"),he=a(Element.prototype,"namespaceURI"),me=s(Document.prototype.querySelector),we=s(Document.prototype.querySelectorAll),Ee=a(NodeList.prototype,"length"),_e=s(NodeList.prototype.item),T=a(Node.prototype,"baseURI"),I=a(Node.prototype,"isConnected"),be=s(Document.prototype.createElement),ve=s(HTMLElement.prototype.click),Se=s(c.open),ke=s(location.assign),Ne=s(location.replace),Re=encodeURIComponent,Oe=s(String.prototype.startsWith),ft=s(String.prototype.charCodeAt),dt=s(String.prototype.slice),Le=s(String.prototype.toLowerCase),B=s(c.setTimeout),Pe=s(c.queueMicrotask),Ae=s(c.addEventListener),xe=s(c.removeEventListener),gt=s(EventTarget.prototype.addEventListener),yt=s(EventTarget.prototype.removeEventListener),ht=Object.defineProperties,q=t=>{let e=[],n=[HTMLElement.prototype,SVGElement.prototype,Document.prototype,c];for(let o=0;o<n.length;o+=1)try{e[e.length]={get:a(n[o],t),set:H(n[o],t)}}catch{}return e},We={click:q("onclick"),auxclick:q("onauxclick"),submit:q("onsubmit")},C=WeakMap,Te=WeakSet,G=s(WeakMap.prototype.get),mt=s(WeakMap.prototype.set),wt=s(WeakMap.prototype.delete),Ie=s(WeakSet.prototype.add),Ce=s(WeakSet.prototype.has),Fe=Mt(i.site),Et=Ut(navigator.userAgent),_t=U(new b(i.exitPath,_)),Me=`${_t}?`,R=(t,e)=>{try{let n=new b(t,e);return{href:U(n),origin:$t(n),protocol:Bt(n),hostname:qt(n)}}catch{return}},De=(t,e,n)=>{let o=n?"&noreferrer=1":"";return`${_t}?q=${Re(t.href)}&trigger=${e}${o}`},Y=()=>{let t=we(d,'meta[name="referrer" i][content]'),e=!1;for(let n=0;n<Ee(t);n+=1)e=Ht(w(_e(t,n),"content"),e);return e},j=(t,e,{target:n,noReferrer:o,replaces:r})=>{let u=De(t,e,o);if(n){Se(c,u,n,"noopener");return}(r?Ne:ke)(location,u)},F=t=>Dt(t,_,Fe),M=0,V,z=!1,He=t=>{if(M>0){V=t;return}t()},Ue=t=>{if(M-=1,t&&(z=!0),M>0)return;let e=z?void 0:V;V=void 0,z=!1,e&&e()},Ke=t=>t!==void 0&&Oe(t.href,Me),P=t=>{try{return ye(t)}catch{return}},bt=t=>nt(w(t,"rel"),w(t,"referrerpolicy"),Y()),$e=t=>{let e=pt?pt(t):null,n=e===null?void 0:P(e);return n==="a"||n==="area"?bt(e):Y()},Be=t=>{let e=R(fe(pe(t)));if(Ke(e)){ct(t);return}if(!ee(t)||ut(t)==="traverse"||!F(e)||de(t)!==null)return;st(t);let n={target:"",noReferrer:$e(t),replaces:ut(t)==="replace"};He(()=>j(e,"navigate",n))},A=t=>{let e=w(t,"href");return e===null&&he(t)===fn?ge(t,dn,"href"):e},qe=t=>{let e=K(t);for(let n=0;n<e.length;n+=1){let o=e[n],r=P(o);if(r==="a"||r==="area"){let u=A(o);if(u!==null)return{node:o,href:u}}}},vt=()=>{let t=me(d,"base[target]");return t?w(t,"target"):""},X=t=>w(t,"target")??vt(),Ge=t=>{try{return{metaKey:ae(t),ctrlKey:le(t),shiftKey:ue(t),button:ie(t)}}catch{return}},St=new Te,Ye=t=>{let e=!1,n=()=>{e=!0},o=()=>e||Ce(St,t);return ht(t,{__proto__:null,preventDefault:{__proto__:null,configurable:!0,value:n},defaultPrevented:{__proto__:null,configurable:!0,get:o},returnValue:{__proto__:null,configurable:!0,get:()=>!o(),set:r=>{r||n()}}}),o},je={click:new C,auxclick:new C,submit:new C},Ve=(t,e)=>{let n=We[t],o=je[t],r=[],u=f=>{for(let p=0;p<r.length;p+=1)if(r[p]===f)return!0;return!1},g=(f,p,E)=>{let m=s(E);function D(N){let O=m(this,N);return O===!1&&typeof N=="object"&&N!==null&&Ie(St,N),O}return{target:f,accessor:p,handler:E,wrapper:D,inFlight:0}},v=()=>{for(let f=0;f<e.length;f+=1)for(let p=0;p<n.length;p+=1){let E;try{E=n[p].get(e[f])}catch{continue}if(typeof E=="function"){let m=G(o,e[f]);(!m||m.wrapper!==E)&&(m=g(e[f],n[p],E),n[p].set(e[f],m.wrapper),mt(o,e[f],m)),u(m)||(m.inFlight+=1,r[r.length]=m)}break}};return v(),{wrap:v,unwrap:()=>{for(let f=0;f<r.length;f+=1){let p=r[f];p.inFlight-=1,!(p.inFlight>0)&&(G(o,p.target)===p&&wt(o,p.target),p.accessor.get(p.target)===p.wrapper&&p.accessor.set(p.target,p.handler))}}}},ze=(t,e,n)=>{let o=A(t),r=o===null?void 0:R(o,T(d));if(!F(r))return;let u={target:Et?"":W(X(t),n),noReferrer:bt(t),replaces:!1};return{__proto__:null,inWindow:u.target==="",go:()=>j(r,e,u)}},kt=t=>{let e=A(t);if(e===null||w(t,"download")===null)return!1;let n=R(e,T(d));return n!==void 0&&(n.origin===_||n.protocol==="blob:"||n.protocol==="data:")},Xe=(t,e)=>A(t)!==null&&!kt(t)&&W(X(t),e)==="",Je=(t,e)=>{let n=A(t);if(n===null)return!1;let o=be(d,"a"),r=W(X(t),e);$(o,"href",n),$(o,"target",r||"_self");for(let u=0;u<ot.length;u+=1){let g=w(t,ot[u]);g!==null&&$(o,ot[u],g)}return ve(o),r===""&&!kt(t)},Qe=(t,e,n)=>({__proto__:null,plan:()=>ze(t,e,n),navigatesWindow:()=>Xe(t,n),follow:()=>Je(t,n)}),Nt=(t,e,n)=>{M+=1;let o=K(t),r=o.length-1,u=0,g=!1,v=!1,k=l=>{v||(v=!0,Ue(l))},f=l=>{if(g)return;g=!0;let L=at(t),y=L?void 0:n.plan(),xt=l&&n.follow!==void 0,x;!L&&(y||xt)&&(st(t),x=Ye(t)),y?.readFields!==void 0&&(l?x&&Pe(c,()=>{x()||y.handlerReturned()}):y.readFields()),B(c,()=>{if(!x){k(!at(t)&&n.navigatesWindow());return}if(x()){k(!1);return}if(xt&&(y=n.plan(),!y)){k(n.follow());return}if(y.dropped!==void 0&&y.dropped()){k(!1);return}y.go(),k(y.inWindow)},0)},p=(l,L)=>{for(let y=0;y<o.length;y+=1)if(o[y]===l)return L===se?r-y:o.length+y;return-1},E=()=>{p(oe(t),re(t))<=u&&f(!0)},m=l=>{l===t&&f(!1)},D=Ve(e,o),N=l=>L=>{if(L===t){if(u=l,lt(t)){f(!1);return}D.wrap()}},O=[],tt=[],et=ne(t);if(et){for(let l=0;l<r;l+=1)O[l]=N(r-l),tt[l]=N(o.length+l),gt(o[l],e,O[l],!0),gt(o[l],e,tt[l],!1);Ae(c,e,m,!1)}if(B(c,()=>{if(g||k(!1),g=!0,D.unwrap(),!!et){for(let l=0;l<r;l+=1)yt(o[l],e,O[l],!0),yt(o[l],e,tt[l],!1);xe(c,e,m,!1)}},0),!et){f(!0);return}ht(t,{__proto__:null,stopPropagation:{__proto__:null,configurable:!0,value:()=>{E(),zt(t)}},stopImmediatePropagation:{__proto__:null,configurable:!0,value:()=>{f(!0),ct(t)}},cancelBubble:{__proto__:null,configurable:!0,get:()=>lt(t),set:l=>{l&&E(),ce(t,l)}}})},J=new C,Ze=(t,e)=>{let n=K(t);for(let o=0;o<n.length;o+=1){let r=n[o],u=P(r);if(u==="button"||u==="input"){mt(J,r,e),B(c,()=>wt(J,r),0);return}}},Rt=t=>{let e=Xt(t),n=Ge(t);if(!n||e==="auxclick"&&n.button!==1)return;e==="click"&&Ze(t,n);let o=qe(t);!o||!F(R(o.href,T(d)))||Nt(t,e,Qe(o.node,e,n))},Q=(t,e,n,o)=>(e?w(e,n):null)??w(t,o),Ot=(t,e)=>Le(Q(t,e,"formmethod","method")??""),Lt=(t,e,n)=>W(Q(t,e,"formtarget","target")??vt(),n),Pt=(t,e)=>{let n=Ot(t,e);if(n==="post"||n==="dialog")return;let o=Q(t,e,"formaction","action");if(o===null||o==="")return;let r=R(o,T(d));return F(r)?r:void 0},tn=(t,e)=>{if((e&&(P(e)==="button"?Zt:te)(e))===t)try{return new rt(t,e)}catch{}return new rt(t)},Z=t=>{let e="",n=0;for(let o=0;o<t.length;o+=1){let r=ft(t,o);(r===13||r===10)&&(e+=`${dt(t,n,o)}\r
+`,r===13&&ft(t,o+1)===10&&(o+=1),n=o+1)}return n===0?t:e+dt(t,n)},en=t=>{try{return Z(Qt(t))}catch{return""}},At=(t,e,n)=>{try{let o=new b(n.href),r=new Yt;for(let u of tn(t,e)){let g=u[1];Vt(r,Z(u[0]),typeof g=="string"?Z(g):en(g))}return Gt(o,`?${jt(r)}`),R(U(o))??n}catch{return n}},nn=(t,e,n)=>{if(!I(t))return;let o=Pt(t,e);if(!o)return;let r,u=!1,g=()=>{r=At(t,e,o),I(t)||(u=!0)},v={target:Et?"":Lt(t,e,n),noReferrer:nt(w(t,"rel"),null,Y()),replaces:!1};return{__proto__:null,inWindow:v.target==="",go:()=>j(r??At(t,e,o),"submit",v),readFields:g,handlerReturned:()=>{I(t)?g():u=!0},dropped:()=>u}},on=(t,e,n)=>I(t)&&Ot(t,e)!=="dialog"&&Lt(t,e,n)==="",rn=(t,e,n)=>({__proto__:null,plan:()=>nn(t,e,n),navigatesWindow:()=>on(t,e,n)}),sn=t=>{if(!t.isTrusted)return;let e=Jt(t);if(P(e)!=="form")return;let n=it?it(t):null;if(!Pt(e,n))return;let o=(n&&G(J,n))??gn;Nt(t,"submit",rn(e,n,o))};h?.addEventListener("navigate",Be,!0),c.addEventListener("click",Rt,!0),c.addEventListener("auxclick",Rt,!0),c.addEventListener("submit",sn,!0)}Kt({"site":"agoriccione.com","exitPath":"\/url"});})();
 //# sourceURL=exit-interstitial.js
 </script>
 
@@ -34,7 +35,7 @@
 >
 <meta
   property="og:url"
-  content="https://3sjfcrxmusenrro3-41797550241.shopifypreview.com/"
+  content="https://agoriccione.com/"
 >
 <meta
   property="og:title"
@@ -1140,8 +1141,7 @@
 </style>
 
 
-    <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta name="robots" content="noindex,nofollow">
-<meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/41797550241/digital_wallets/dialog">
+    <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/41797550241/digital_wallets/dialog">
 <meta id="in-context-paypal-metadata" data-shop-id="41797550241" data-venmo-supported="false" data-environment="production" data-locale="it_IT" data-paypal-v4="true" data-currency="EUR">
 <link rel="alternate" hreflang="x-default" href="#">
 <link rel="alternate" hreflang="it" href="#">
@@ -1149,6 +1149,7 @@
 
 <link rel="preconnect" href="https://shop.app" crossorigin="anonymous">
 
+<script id="apple-pay-shop-capabilities" type="application/json">{"shopId":41797550241,"countryCode":"IT","currencyCode":"EUR","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/41797550241","merchantName":"AgoRiccione","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","maestro","masterCard","amex"],"total":{"type":"pending","label":"AgoRiccione","amount":"1.00"},"shopifyPaymentsEnabled":true,"supportsSubscriptions":true}</script>
 
 
 <script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
@@ -1175,7 +1176,7 @@
 
 
 
-<script>(()=>{var d="shopify:webmcp_adapter_loaded",n=Symbol.for("shopify.webmcp_adapter_loading");function s(c,a,{win:r=window,doc:o=document}={}){function p(){try{return r.localStorage.getItem(d)==="true"}catch{return!1}}function l(){try{r.localStorage.setItem(d,"true")}catch{}}function u(){return typeof(o.modelContext||r.navigator?.modelContext)?.registerTool=="function"}function f(){if(r[n]||!u())return;let t=o.head||o.getElementsByTagName("head")[0];if(!t)return;let e=o.createElement("script");e.type="module",e.crossOrigin="anonymous",a&&(e.integrity=a),e.src=c,e.addEventListener("load",l,{once:!0}),e.addEventListener("error",()=>{r[n]=!1},{once:!0}),t.appendChild(e),r[n]=!0}function _(t){let e=o.getElementById("shopify-origin-trials");if(!e||r.__shopifyOriginTrialsDone){t();return}e.addEventListener("load",t,{once:!0}),e.addEventListener("error",t,{once:!0})}function i(){_(()=>r.setTimeout(f,0))}function m(){o.addEventListener("DOMContentLoaded",i,{once:!0})}p()?i():m()}s("\/\/3sjfcrxmusenrro3-41797550241.shopifypreview.com\/cdn\/shopifycloud\/storefront\/assets\/storefront\/webmcp-23c12384.js","sha256-r8Pww6V2udgtSdaVbcRtdZ4Kg+gXP7aLPZOtQSJPrbM=");})();
+<script>(()=>{var d="shopify:webmcp_adapter_loaded",n=Symbol.for("shopify.webmcp_adapter_loading");function s(c,a,{win:r=window,doc:o=document}={}){function p(){try{return r.localStorage.getItem(d)==="true"}catch{return!1}}function l(){try{r.localStorage.setItem(d,"true")}catch{}}function u(){return typeof(o.modelContext||r.navigator?.modelContext)?.registerTool=="function"}function f(){if(r[n]||!u())return;let t=o.head||o.getElementsByTagName("head")[0];if(!t)return;let e=o.createElement("script");e.type="module",e.crossOrigin="anonymous",a&&(e.integrity=a),e.src=c,e.addEventListener("load",l,{once:!0}),e.addEventListener("error",()=>{r[n]=!1},{once:!0}),t.appendChild(e),r[n]=!0}function _(t){let e=o.getElementById("shopify-origin-trials");if(!e||r.__shopifyOriginTrialsDone){t();return}e.addEventListener("load",t,{once:!0}),e.addEventListener("error",t,{once:!0})}function i(){_(()=>r.setTimeout(f,0))}function m(){o.addEventListener("DOMContentLoaded",i,{once:!0})}p()?i():m()}s("\/\/agoriccione.com\/cdn\/shopifycloud\/storefront\/assets\/storefront\/webmcp-a2ee1852.js","sha256-dHJMv9hySi8oNR9BaMEf6NkclfAtwwhKPtT04IWOeKY=");})();
 </script>
 
 <script data-source-attribution="shopify.dynamic_checkout.buyer_consent">
@@ -1184,7 +1185,7 @@
 <script data-source-attribution="shopify.dynamic_checkout.cart.bootstrap">document.addEventListener("DOMContentLoaded",(function(){function t(){return document.querySelector("shopify-accelerated-checkout-cart, shopify-accelerated-checkout")}if(t())Shopify.PaymentButton.init();else{new MutationObserver((function(e,n){t()&&(Shopify.PaymentButton.init(),n.disconnect())})).observe(document.body,{childList:!0,subtree:!0})}}));
 </script>
 
-<script id="OnlineStorePreviewBarNextData" type="application/json">{"pageSpecificData":{"resource":null},"theme":{"id":207689384270,"isDraft":true,"name":"AgoRiccione - nuovo","sharingAccessToken":"3sjfcrxmusenrro3"},"shop":{"id":41797550241,"isPasswordEnabled":false,"b2bRestricted":false,"primaryLocale":"it","domain":"agoriccione.myshopify.com"},"betas":{"cc7bff1c":false},"simplifiedPreviewBar":true}</script>
+<script id="OnlineStorePreviewBarNextData" type="application/json">{"pageSpecificData":{"resource":null},"theme":{"id":207689384270,"isDraft":true,"name":"AgoRiccione - nuovo","sharingAccessToken":"xj38oqz4gailge0s"},"shop":{"id":41797550241,"isPasswordEnabled":false,"b2bRestricted":false,"primaryLocale":"it","domain":"agoriccione.myshopify.com"},"betas":{"94530448":true,"c6f3cba1":true,"cc7bff1c":false},"simplifiedPreviewBar":true}</script>
 <style id="shopify-accelerated-checkout-cart">
         #shopify-buyer-consent {
   margin-top: 1em;
@@ -1210,16 +1211,15 @@
 }
 
       </style>
-<link rel="stylesheet" media="screen" href="https://cdn.shopify.com/s/files/1/0417/9755/0241/t/4/compiled_assets/styles.css?v=99500042747705555381792792873">
+<link rel="stylesheet" media="screen" href="https://cdn.shopify.com/s/files/1/0417/9755/0241/t/4/compiled_assets/styles.css?v=178639901511880583991793919399">
 <script id="shopify-cfh-end">window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
   <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
-
 
 <script>
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'EUR';
-  var meta = {"page":{"pageType":"home","requestId":"4c7dfc73-3278-41ff-bed0-0430ed95e61f-1792795137"}};
+  var meta = {"page":{"pageType":"home","requestId":"c3764a38-fd56-4fbf-a262-553a8170a79d-1794046137"}};
   for (var attr in meta) {
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
@@ -1227,7 +1227,7 @@
 
 
 <script src="https://cdn.shopify.com/storefront/web-components/account.js" type="module" crossorigin fetchpriority="low" async></script><script id="shopify-customer-account-data" type="application/json">{"customer":null,"shop":{"id":"41797550241","customerAccountTranslations":[{"key":"account_menu.signed_out_state.sheet_title","value":"Accedi o crea un account"},{"key":"account_menu.signed_out_state.section_divider","value":"Altri metodi di accesso"},{"key":"account_menu.signed_out_state.alternate_divider","value":"OPPURE"},{"key":"account_menu.signed_out_state.email_field_label","value":"Email"},{"key":"account_menu.signed_out_state.orders_button","value":"Ordini"},{"key":"account_menu.signed_out_state.profile_button","value":"Profilo"},{"key":"account_menu.signed_out_state.shop_login_button","value":"Accedi con Shop"},{"key":"account_menu.signed_out_state.continue_with_google","value":"Continua con Google"},{"key":"account_menu.signed_out_state.continue_with_facebook","value":"Continua con Facebook"},{"key":"account_menu.signed_out_state.marketing_consent_label","value":"Inviami email con notizie e offerte"},{"key":"account_menu.signed_in_state.greeting_with_name","value":"Ciao {{first_name}}"},{"key":"account_menu.signed_in_state.greeting_without_name","value":"Account"},{"key":"account_menu.signed_in_state.orders_button","value":"Ordini"},{"key":"account_menu.signed_in_state.profile_button","value":"Profilo"},{"key":"account_menu.location_picker.sheet_title","value":"Sedi"},{"key":"account_menu.location_picker.search_field_placeholder","value":"Ricerca"},{"key":"account_menu.aria_labels.close_menu","value":"Chiudi menu"},{"key":"account_menu.aria_labels.back_to_main_menu","value":"Torna al menu principale da {{title}}"},{"key":"account_menu.aria_labels.open_submenu","value":"{{title}}, apre il sottomenu"},{"key":"account_menu.aria_labels.loading_menu","value":"Caricamento menu"},{"key":"account_menu.aria_labels.loading","value":"Caricamento"},{"key":"account_menu.aria_labels.account","value":"Account"},{"key":"account_menu.aria_labels.sign_in_with_email","value":"Accedi con l'email"},{"key":"account_menu.aria_labels.sign_in","value":"Accedi"}],"socialLoginProviders":[{"handle":"Shop"}],"legacyCustomerAccounts":false,"signInLinksVisible":true,"b2bEnabled":false,"marketingConsentSigninEnabled":true,"marketingConsentPreselected":false},"visitor":{"country":"IT","language":"it"}}</script>
-<meta name="shopify-y" content="4c08a2c6-b0e1-49cf-8fd5-9d0c2d259774" data-expiration="1824352737000"><meta name="shopify-s" content="ab374fc0-8836-4d88-adb5-cecbee9b7c36" data-expiration="1792796937000">
+<meta name="shopify-y" content="06d1a81f-35d5-468a-8af4-5fc1cba1ecbc" data-expiration="1825603737000"><meta name="shopify-s" content="1175d8e4-f8a4-40fe-b713-361317edbc84" data-expiration="1794047937000"><meta name="request-id" content="c3764a38-fd56-4fbf-a262-553a8170a79d-1794046137"        >
 </head>
 
   <body class="page-width-narrow card-hover-effect-none">
@@ -1409,9 +1409,9 @@
     "@type": "Organization",
     "name": "AgoRiccione",
     
-      "logo": "https:\/\/3sjfcrxmusenrro3-41797550241.shopifypreview.com\/cdn\/shop\/files\/IMG_4076_cb248b2a-6f42-43c1-a8cc-d1efd64c43ff.jpg?v=1715443203\u0026width=500",
+      "logo": "https:\/\/agoriccione.com\/cdn\/shop\/files\/IMG_4076_cb248b2a-6f42-43c1-a8cc-d1efd64c43ff.jpg?v=1715443203\u0026width=500",
     
-    "url": "https:\/\/3sjfcrxmusenrro3-41797550241.shopifypreview.com"
+    "url": "https:\/\/agoriccione.com"
   }
 </script>
 
@@ -1619,895 +1619,206 @@ none;
         <ul
           class="menu-drawer__menu has-submenu"
           role="list"
-        >
+        >
+            
+            
               <li
-                class="menu-drawer__list-item"
                 style="--menu-drawer-animation-index: 1;"
-              ><details
-                    id="Details-menu-drawer-menu-item-1"
-                    class="menu-drawer__menu-container"
-                  >
-                    <summary
-                      id="HeaderDrawer-novita"
-                      class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element"
-                      on:click="header-drawer/open/submenu"
-                    >
-                      <span class="menu-drawer__menu-item-text wrap-text">NOVITÀ</span>
-                      <span class="svg-wrapper icon-caret icon-caret--forward"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M11 5.5L7 9.5L3 5.5" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                    </summary>
-                    <div
-                      id="link-novita"
-                      class="menu-drawer__submenu has-submenu"
-                      tabindex="-1"
-                      style="--menu-drawer-animation-index: 1;"
-                    >
-                      <div class="menu-drawer__inner-submenu">
-                        <div class="menu-drawer__nav-buttons menu-drawer__nav-buttons--with-title">
-                          <button
-                            class="button menu-drawer__back-button focus-inset"
-                            on:click="header-drawer/back"
-                            aria-label="Torna al menu principale"
-                          >
-                            <span class="svg-wrapper icon-caret icon-caret--backward"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M11 5.5L7 9.5L3 5.5" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                          </button>
-                          <a
-                            href="#"
-                            class="menu-drawer__title focus-inset"
-                            
-                          >
-                            <span class="menu-drawer__menu-item-text wrap-text">NOVITÀ</span>
-                          </a>
-                          <button
-                            class="button button-unstyled close-button menu-drawer__close-button focus-inset"
-                            type="button"
-                            aria-label="Chiudi"
-                            on:click="header-drawer/close"
-                          >
-                            <span class="svg-wrapper header-drawer-icon header-drawer-icon--close"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M3.75 3.75L10.25 10.25M10.25 3.75L3.75 10.25" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                          </button>
-                        </div>
-                        
-                        <ul
-                          class="menu-drawer__menu menu-drawer__menu--childlist"
-                          role="list"
-                          tabindex="-1"
-                        >
-                          <li
-                              class="
-                                menu-drawer__list-item
-                                menu-drawer__list-item--flat
-                              "
-                            >
-                                <a
-                                    id="HeaderDrawer-novita-appena-arrivati"
-                                    href="#"
-                                    class="menu-drawer__menu-item menu-drawer__menu-item--parent"
-                                    
-                                  >
-                                    <span class="menu-drawer__menu-item-text wrap-text">Appena arrivati</span>
-                                  </a>
-                                  
-                                  <ul
-                                    class="menu-drawer__menu menu-drawer__menu--grandchildlist details-content"
-                                    role="list"
-                                    tabindex="-1"
-                                  ><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 1;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-novita-appena-arrivati-tutte-le-novita"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Tutte le novità</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 2;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-novita-appena-arrivati-piu-venduti"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Più venduti</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 3;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-novita-appena-arrivati-di-nuovo-disponibili"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Di nuovo disponibili</span>
-                                        </a>
-                                      </li></ul></li><li
-                              class="
-                                menu-drawer__list-item
-                                menu-drawer__list-item--flat
-                              "
-                            >
-                                <a
-                                    id="HeaderDrawer-novita-collezioni"
-                                    href="#"
-                                    class="menu-drawer__menu-item menu-drawer__menu-item--parent"
-                                    
-                                  >
-                                    <span class="menu-drawer__menu-item-text wrap-text">Collezioni</span>
-                                  </a>
-                                  
-                                  <ul
-                                    class="menu-drawer__menu menu-drawer__menu--grandchildlist details-content"
-                                    role="list"
-                                    tabindex="-1"
-                                  ><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 1;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-novita-collezioni-ibiza-2026"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Ibiza 2026</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 2;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-novita-collezioni-ago"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">AGO</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 3;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-novita-collezioni-a-collection"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">‘’A’’ COLLECTION</span>
-                                        </a>
-                                      </li></ul></li></ul>
-                        
-                      </div>
-                    </div>
-                  </details></li>
-              <li
-                class="menu-drawer__list-item"
-                style="--menu-drawer-animation-index: 2;"
-              ><details
-                    id="Details-menu-drawer-menu-item-2"
-                    class="menu-drawer__menu-container"
-                  >
-                    <summary
-                      id="HeaderDrawer-abbigliamento"
-                      class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element"
-                      on:click="header-drawer/open/submenu"
-                    >
-                      <span class="menu-drawer__menu-item-text wrap-text">ABBIGLIAMENTO</span>
-                      <span class="svg-wrapper icon-caret icon-caret--forward"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M11 5.5L7 9.5L3 5.5" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                    </summary>
-                    <div
-                      id="link-abbigliamento"
-                      class="menu-drawer__submenu has-submenu"
-                      tabindex="-1"
-                      style="--menu-drawer-animation-index: 2;"
-                    >
-                      <div class="menu-drawer__inner-submenu">
-                        <div class="menu-drawer__nav-buttons menu-drawer__nav-buttons--with-title">
-                          <button
-                            class="button menu-drawer__back-button focus-inset"
-                            on:click="header-drawer/back"
-                            aria-label="Torna al menu principale"
-                          >
-                            <span class="svg-wrapper icon-caret icon-caret--backward"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M11 5.5L7 9.5L3 5.5" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                          </button>
-                          <a
-                            href="#"
-                            class="menu-drawer__title focus-inset"
-                            
-                          >
-                            <span class="menu-drawer__menu-item-text wrap-text">ABBIGLIAMENTO</span>
-                          </a>
-                          <button
-                            class="button button-unstyled close-button menu-drawer__close-button focus-inset"
-                            type="button"
-                            aria-label="Chiudi"
-                            on:click="header-drawer/close"
-                          >
-                            <span class="svg-wrapper header-drawer-icon header-drawer-icon--close"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M3.75 3.75L10.25 10.25M10.25 3.75L3.75 10.25" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                          </button>
-                        </div>
-                        
-                        <ul
-                          class="menu-drawer__menu menu-drawer__menu--childlist"
-                          role="list"
-                          tabindex="-1"
-                        >
-                          <li
-                              class="
-                                menu-drawer__list-item
-                                menu-drawer__list-item--flat
-                              "
-                            >
-                                <a
-                                    id="HeaderDrawer-abbigliamento-capi"
-                                    href="#"
-                                    class="menu-drawer__menu-item menu-drawer__menu-item--parent"
-                                    
-                                  >
-                                    <span class="menu-drawer__menu-item-text wrap-text">Capi</span>
-                                  </a>
-                                  
-                                  <ul
-                                    class="menu-drawer__menu menu-drawer__menu--grandchildlist details-content"
-                                    role="list"
-                                    tabindex="-1"
-                                  ><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 1;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-abbigliamento-capi-tute"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Tute</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 2;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-abbigliamento-capi-abiti"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Abiti</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 3;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-abbigliamento-capi-top"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Top</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 4;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-abbigliamento-capi-pantaloni"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Pantaloni</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 5;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-abbigliamento-capi-gonne"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Gonne</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 6;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-abbigliamento-capi-giacche"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Giacche</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 7;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-abbigliamento-capi-completi"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Completi</span>
-                                        </a>
-                                      </li></ul></li><li
-                              class="
-                                menu-drawer__list-item
-                                menu-drawer__list-item--flat
-                              "
-                            >
-                                <a
-                                    id="HeaderDrawer-abbigliamento-in-evidenza"
-                                    href="#"
-                                    class="menu-drawer__menu-item menu-drawer__menu-item--parent"
-                                    
-                                  >
-                                    <span class="menu-drawer__menu-item-text wrap-text">In evidenza</span>
-                                  </a>
-                                  
-                                  <ul
-                                    class="menu-drawer__menu menu-drawer__menu--grandchildlist details-content"
-                                    role="list"
-                                    tabindex="-1"
-                                  ><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 1;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-abbigliamento-in-evidenza-piu-venduti"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Più venduti</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 2;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-abbigliamento-in-evidenza-novita"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Novità</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 3;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-abbigliamento-in-evidenza-saldi"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Saldi</span>
-                                        </a>
-                                      </li></ul></li></ul>
-                        
-                      </div>
-                    </div>
-                  </details></li>
-              <li
-                class="menu-drawer__list-item"
-                style="--menu-drawer-animation-index: 3;"
-              ><details
-                    id="Details-menu-drawer-menu-item-3"
-                    class="menu-drawer__menu-container"
-                  >
-                    <summary
-                      id="HeaderDrawer-intimo"
-                      class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element"
-                      on:click="header-drawer/open/submenu"
-                    >
-                      <span class="menu-drawer__menu-item-text wrap-text">INTIMO</span>
-                      <span class="svg-wrapper icon-caret icon-caret--forward"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M11 5.5L7 9.5L3 5.5" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                    </summary>
-                    <div
-                      id="link-intimo"
-                      class="menu-drawer__submenu has-submenu"
-                      tabindex="-1"
-                      style="--menu-drawer-animation-index: 3;"
-                    >
-                      <div class="menu-drawer__inner-submenu">
-                        <div class="menu-drawer__nav-buttons menu-drawer__nav-buttons--with-title">
-                          <button
-                            class="button menu-drawer__back-button focus-inset"
-                            on:click="header-drawer/back"
-                            aria-label="Torna al menu principale"
-                          >
-                            <span class="svg-wrapper icon-caret icon-caret--backward"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M11 5.5L7 9.5L3 5.5" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                          </button>
-                          <a
-                            href="#"
-                            class="menu-drawer__title focus-inset"
-                            
-                          >
-                            <span class="menu-drawer__menu-item-text wrap-text">INTIMO</span>
-                          </a>
-                          <button
-                            class="button button-unstyled close-button menu-drawer__close-button focus-inset"
-                            type="button"
-                            aria-label="Chiudi"
-                            on:click="header-drawer/close"
-                          >
-                            <span class="svg-wrapper header-drawer-icon header-drawer-icon--close"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M3.75 3.75L10.25 10.25M10.25 3.75L3.75 10.25" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                          </button>
-                        </div>
-                        
-                        <ul
-                          class="menu-drawer__menu menu-drawer__menu--childlist"
-                          role="list"
-                          tabindex="-1"
-                        >
-                          <li
-                              class="
-                                menu-drawer__list-item
-                                menu-drawer__list-item--flat
-                              "
-                            >
-                                <a
-                                    id="HeaderDrawer-intimo-intimo"
-                                    href="#"
-                                    class="menu-drawer__menu-item menu-drawer__menu-item--parent"
-                                    
-                                  >
-                                    <span class="menu-drawer__menu-item-text wrap-text">Intimo</span>
-                                  </a>
-                                  
-                                  <ul
-                                    class="menu-drawer__menu menu-drawer__menu--grandchildlist details-content"
-                                    role="list"
-                                    tabindex="-1"
-                                  ><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 1;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-intimo-intimo-reggiseni"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Reggiseni</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 2;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-intimo-intimo-slip-e-perizomi"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Slip e perizomi</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 3;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-intimo-intimo-body"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Body</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 4;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-intimo-intimo-corsetti"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Corsetti</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 5;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-intimo-intimo-calze"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Calze</span>
-                                        </a>
-                                      </li></ul></li><li
-                              class="
-                                menu-drawer__list-item
-                                menu-drawer__list-item--flat
-                              "
-                            >
-                                <a
-                                    id="HeaderDrawer-intimo-in-evidenza"
-                                    href="#"
-                                    class="menu-drawer__menu-item menu-drawer__menu-item--parent"
-                                    
-                                  >
-                                    <span class="menu-drawer__menu-item-text wrap-text">In evidenza</span>
-                                  </a>
-                                  
-                                  <ul
-                                    class="menu-drawer__menu menu-drawer__menu--grandchildlist details-content"
-                                    role="list"
-                                    tabindex="-1"
-                                  ><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 1;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-intimo-in-evidenza-piu-venduti"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Più venduti</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 2;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-intimo-in-evidenza-novita"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Novità</span>
-                                        </a>
-                                      </li></ul></li></ul>
-                        
-                      </div>
-                    </div>
-                  </details></li>
-              <li
-                class="menu-drawer__list-item"
-                style="--menu-drawer-animation-index: 4;"
-              ><details
-                    id="Details-menu-drawer-menu-item-4"
-                    class="menu-drawer__menu-container"
-                  >
-                    <summary
-                      id="HeaderDrawer-accessori"
-                      class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element"
-                      on:click="header-drawer/open/submenu"
-                    >
-                      <span class="menu-drawer__menu-item-text wrap-text">ACCESSORI</span>
-                      <span class="svg-wrapper icon-caret icon-caret--forward"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M11 5.5L7 9.5L3 5.5" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                    </summary>
-                    <div
-                      id="link-accessori"
-                      class="menu-drawer__submenu has-submenu"
-                      tabindex="-1"
-                      style="--menu-drawer-animation-index: 4;"
-                    >
-                      <div class="menu-drawer__inner-submenu">
-                        <div class="menu-drawer__nav-buttons menu-drawer__nav-buttons--with-title">
-                          <button
-                            class="button menu-drawer__back-button focus-inset"
-                            on:click="header-drawer/back"
-                            aria-label="Torna al menu principale"
-                          >
-                            <span class="svg-wrapper icon-caret icon-caret--backward"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M11 5.5L7 9.5L3 5.5" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                          </button>
-                          <a
-                            href="#"
-                            class="menu-drawer__title focus-inset"
-                            
-                          >
-                            <span class="menu-drawer__menu-item-text wrap-text">ACCESSORI</span>
-                          </a>
-                          <button
-                            class="button button-unstyled close-button menu-drawer__close-button focus-inset"
-                            type="button"
-                            aria-label="Chiudi"
-                            on:click="header-drawer/close"
-                          >
-                            <span class="svg-wrapper header-drawer-icon header-drawer-icon--close"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M3.75 3.75L10.25 10.25M10.25 3.75L3.75 10.25" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                          </button>
-                        </div>
-                        
-                        <ul
-                          class="menu-drawer__menu menu-drawer__menu--childlist"
-                          role="list"
-                          tabindex="-1"
-                        >
-                          <li
-                              class="
-                                menu-drawer__list-item
-                                menu-drawer__list-item--flat
-                              "
-                            >
-                                <a
-                                    id="HeaderDrawer-accessori-accessori"
-                                    href="#"
-                                    class="menu-drawer__menu-item menu-drawer__menu-item--parent"
-                                    
-                                  >
-                                    <span class="menu-drawer__menu-item-text wrap-text">Accessori</span>
-                                  </a>
-                                  
-                                  <ul
-                                    class="menu-drawer__menu menu-drawer__menu--grandchildlist details-content"
-                                    role="list"
-                                    tabindex="-1"
-                                  ><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 1;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-accessori-accessori-borse"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Borse</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 2;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-accessori-accessori-occhiali"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Occhiali</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 3;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-accessori-accessori-gioielli"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Gioielli</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 4;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-accessori-accessori-cappelli"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Cappelli</span>
-                                        </a>
-                                      </li></ul></li></ul>
-                        
-                      </div>
-                    </div>
-                  </details></li>
-              <li
-                class="menu-drawer__list-item"
-                style="--menu-drawer-animation-index: 5;"
-              ><details
-                    id="Details-menu-drawer-menu-item-5"
-                    class="menu-drawer__menu-container"
-                  >
-                    <summary
-                      id="HeaderDrawer-collezioni"
-                      class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element"
-                      on:click="header-drawer/open/submenu"
-                    >
-                      <span class="menu-drawer__menu-item-text wrap-text">COLLEZIONI</span>
-                      <span class="svg-wrapper icon-caret icon-caret--forward"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M11 5.5L7 9.5L3 5.5" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                    </summary>
-                    <div
-                      id="link-collezioni"
-                      class="menu-drawer__submenu has-submenu"
-                      tabindex="-1"
-                      style="--menu-drawer-animation-index: 5;"
-                    >
-                      <div class="menu-drawer__inner-submenu">
-                        <div class="menu-drawer__nav-buttons menu-drawer__nav-buttons--with-title">
-                          <button
-                            class="button menu-drawer__back-button focus-inset"
-                            on:click="header-drawer/back"
-                            aria-label="Torna al menu principale"
-                          >
-                            <span class="svg-wrapper icon-caret icon-caret--backward"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M11 5.5L7 9.5L3 5.5" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                          </button>
-                          <a
-                            href="#"
-                            class="menu-drawer__title focus-inset"
-                            
-                          >
-                            <span class="menu-drawer__menu-item-text wrap-text">COLLEZIONI</span>
-                          </a>
-                          <button
-                            class="button button-unstyled close-button menu-drawer__close-button focus-inset"
-                            type="button"
-                            aria-label="Chiudi"
-                            on:click="header-drawer/close"
-                          >
-                            <span class="svg-wrapper header-drawer-icon header-drawer-icon--close"><svg aria-hidden="true" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <path d="M3.75 3.75L10.25 10.25M10.25 3.75L3.75 10.25" stroke="currentColor" stroke-width="var(--icon-stroke-width)" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-</span>
-                          </button>
-                        </div>
-                        
-                        <ul
-                          class="menu-drawer__menu menu-drawer__menu--childlist"
-                          role="list"
-                          tabindex="-1"
-                        >
-                          <li
-                              class="
-                                menu-drawer__list-item
-                                menu-drawer__list-item--flat
-                              "
-                            >
-                                <a
-                                    id="HeaderDrawer-collezioni-le-collezioni"
-                                    href="#"
-                                    class="menu-drawer__menu-item menu-drawer__menu-item--parent"
-                                    
-                                  >
-                                    <span class="menu-drawer__menu-item-text wrap-text">Le collezioni</span>
-                                  </a>
-                                  
-                                  <ul
-                                    class="menu-drawer__menu menu-drawer__menu--grandchildlist details-content"
-                                    role="list"
-                                    tabindex="-1"
-                                  ><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 1;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-collezioni-le-collezioni-ago"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">AGO</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 2;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-collezioni-le-collezioni-a-collection"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">‘’A’’ COLLECTION</span>
-                                        </a>
-                                      </li><li
-                                        class="menu-drawer__list-item"
-                                        style="--menu-drawer-animation-index: 3;"
-                                      >
-                                        <a
-                                          id="HeaderDrawer-collezioni-le-collezioni-tutti-i-prodotti"
-                                          href="#"
-                                          class="menu-drawer__menu-item menu-drawer__menu-item--child"
-                                          
-                                        >
-                                          
-                                          <span class="menu-drawer__menu-item-text wrap-text">Tutti i prodotti</span>
-                                        </a>
-                                      </li></ul></li></ul>
-                        
-                      </div>
-                    </div>
-                  </details></li>
-              <li
-                class="menu-drawer__list-item"
-                style="--menu-drawer-animation-index: 6;"
-              ><a
-                    id="HeaderDrawer-chi-sono"
+                class="menu-drawer__list-item--flat"
+              >
+                <a
+                    id="HeaderDrawer-abbigliamento"
                     href="#"
                     class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element"
                     
                   >
-                    <span class="menu-drawer__menu-item-text wrap-text">CHI SONO</span>
-                  </a></li>
+                    <span class="menu-drawer__menu-item-text wrap-text">ABBIGLIAMENTO</span>
+                  </a>
+                  
+                  <ul
+                    class="menu-drawer__menu menu-drawer__menu--childlist"
+                    role="list"
+                    tabindex="-1"
+                  ><li
+                        class="menu-drawer__list-item"
+                        style="--menu-drawer-animation-index: 1;"
+                      >
+                        <a
+                          href="#"
+                          class="menu-drawer__menu-item menu-drawer__menu-item--child menu-drawer__animated-element"
+                          
+                        >
+                          
+                          <span class="menu-drawer__menu-item-text wrap-text">Tute</span>
+                        </a>
+                      </li><li
+                        class="menu-drawer__list-item"
+                        style="--menu-drawer-animation-index: 1;"
+                      >
+                        <a
+                          href="#"
+                          class="menu-drawer__menu-item menu-drawer__menu-item--child menu-drawer__animated-element"
+                          
+                        >
+                          
+                          <span class="menu-drawer__menu-item-text wrap-text">Top</span>
+                        </a>
+                      </li><li
+                        class="menu-drawer__list-item"
+                        style="--menu-drawer-animation-index: 1;"
+                      >
+                        <a
+                          href="#"
+                          class="menu-drawer__menu-item menu-drawer__menu-item--child menu-drawer__animated-element"
+                          
+                        >
+                          
+                          <span class="menu-drawer__menu-item-text wrap-text">Pantaloni</span>
+                        </a>
+                      </li><li
+                        class="menu-drawer__list-item"
+                        style="--menu-drawer-animation-index: 1;"
+                      >
+                        <a
+                          href="#"
+                          class="menu-drawer__menu-item menu-drawer__menu-item--child menu-drawer__animated-element"
+                          
+                        >
+                          
+                          <span class="menu-drawer__menu-item-text wrap-text">Abiti</span>
+                        </a>
+                      </li><li
+                        class="menu-drawer__list-item"
+                        style="--menu-drawer-animation-index: 1;"
+                      >
+                        <a
+                          href="#"
+                          class="menu-drawer__menu-item menu-drawer__menu-item--child menu-drawer__animated-element"
+                          
+                        >
+                          
+                          <span class="menu-drawer__menu-item-text wrap-text">Gonne</span>
+                        </a>
+                      </li></ul>
+                
+              </li>
+              <li
+                style="--menu-drawer-animation-index: 2;"
+                class="menu-drawer__list-item--flat"
+              >
+                <a
+                    id="HeaderDrawer-intimo"
+                    href="#"
+                    class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element"
+                    
+                  >
+                    <span class="menu-drawer__menu-item-text wrap-text">INTIMO</span>
+                  </a>
+                  
+                  <ul
+                    class="menu-drawer__menu menu-drawer__menu--childlist"
+                    role="list"
+                    tabindex="-1"
+                  ><li
+                        class="menu-drawer__list-item"
+                        style="--menu-drawer-animation-index: 2;"
+                      >
+                        <a
+                          href="#"
+                          class="menu-drawer__menu-item menu-drawer__menu-item--child menu-drawer__animated-element"
+                          
+                        >
+                          
+                          <span class="menu-drawer__menu-item-text wrap-text">Tutto l&#39;intimo</span>
+                        </a>
+                      </li><li
+                        class="menu-drawer__list-item"
+                        style="--menu-drawer-animation-index: 2;"
+                      >
+                        <a
+                          href="#"
+                          class="menu-drawer__menu-item menu-drawer__menu-item--child menu-drawer__animated-element"
+                          
+                        >
+                          
+                          <span class="menu-drawer__menu-item-text wrap-text">Bralette</span>
+                        </a>
+                      </li><li
+                        class="menu-drawer__list-item"
+                        style="--menu-drawer-animation-index: 2;"
+                      >
+                        <a
+                          href="#"
+                          class="menu-drawer__menu-item menu-drawer__menu-item--child menu-drawer__animated-element"
+                          
+                        >
+                          
+                          <span class="menu-drawer__menu-item-text wrap-text">Micro bikini</span>
+                        </a>
+                      </li></ul>
+                
+              </li>
+              <li
+                style="--menu-drawer-animation-index: 3;"
+                class="menu-drawer__list-item--flat"
+              >
+                <a
+                    id="HeaderDrawer-collezioni"
+                    href="#"
+                    class="menu-drawer__menu-item menu-drawer__menu-item--mainlist menu-drawer__animated-element"
+                    
+                  >
+                    <span class="menu-drawer__menu-item-text wrap-text">COLLEZIONI</span>
+                  </a>
+                  
+                  <ul
+                    class="menu-drawer__menu menu-drawer__menu--childlist"
+                    role="list"
+                    tabindex="-1"
+                  ><li
+                        class="menu-drawer__list-item"
+                        style="--menu-drawer-animation-index: 3;"
+                      >
+                        <a
+                          href="#"
+                          class="menu-drawer__menu-item menu-drawer__menu-item--child menu-drawer__animated-element"
+                          
+                        >
+                          
+                          <span class="menu-drawer__menu-item-text wrap-text">AGO</span>
+                        </a>
+                      </li><li
+                        class="menu-drawer__list-item"
+                        style="--menu-drawer-animation-index: 3;"
+                      >
+                        <a
+                          href="#"
+                          class="menu-drawer__menu-item menu-drawer__menu-item--child menu-drawer__animated-element"
+                          
+                        >
+                          
+                          <span class="menu-drawer__menu-item-text wrap-text">‘’A’’ COLLECTION</span>
+                        </a>
+                      </li><li
+                        class="menu-drawer__list-item"
+                        style="--menu-drawer-animation-index: 3;"
+                      >
+                        <a
+                          href="#"
+                          class="menu-drawer__menu-item menu-drawer__menu-item--child menu-drawer__animated-element"
+                          
+                        >
+                          
+                          <span class="menu-drawer__menu-item-text wrap-text">Tutti i prodotti</span>
+                        </a>
+                      </li></ul>
+                
+              </li>
         </ul>
       </nav>
       <div
         class="menu-drawer__utility-links menu-drawer__animated-element"
-        style="--menu-drawer-animation-index: 6;"
+        style="--menu-drawer-animation-index: 3;"
       >
         
         
@@ -9632,7 +8943,7 @@ none;
             
             ref="menuitem"
           >
-            <span class="menu-list__link-title">NOVITÀ</span>
+            <span class="menu-list__link-title">ABBIGLIAMENTO</span>
           </a><button
               type="button"
               class="menu-list__disclosure button-unstyled"
@@ -9642,7 +8953,7 @@ none;
               data-skip-node-update
               on:click="/toggle"
             >
-              <span class="visually-hidden">Mostra sottomenu NOVITÀ</span>
+              <span class="visually-hidden">Mostra sottomenu ABBIGLIAMENTO</span>
               <svg
                 class="menu-list__disclosure-icon"
                 aria-hidden="true"
@@ -9694,115 +9005,67 @@ none;
     <div>
       <a
         href="#"
-        class="mega-menu__link mega-menu__link--parent"
+        class="mega-menu__link "
       >
         
-        <span class="wrap-text">Appena arrivati</span>
+        <span class="wrap-text">Tute</span>
       </a>
-      
-        <ul
-          class="list-unstyled"
-          
-            style="column-count: 1;"
-          
-        >
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Tutte le novità</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Più venduti</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Di nuovo disponibili</span>
-              </a>
-            </li>
-          
-        </ul>
       
     </div>
 
-    </li>
+    
   
-    <li class="mega-menu__column mega-menu__column--span-1">
+    
     <div>
       <a
         href="#"
-        class="mega-menu__link mega-menu__link--parent"
+        class="mega-menu__link "
       >
         
-        <span class="wrap-text">Collezioni</span>
+        <span class="wrap-text">Top</span>
       </a>
       
-        <ul
-          class="list-unstyled"
-          
-            style="column-count: 1;"
-          
-        >
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Ibiza 2026</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">AGO</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">‘’A’’ COLLECTION</span>
-              </a>
-            </li>
-          
-        </ul>
+    </div>
+
+    
+  
+    
+    <div>
+      <a
+        href="#"
+        class="mega-menu__link "
+      >
+        
+        <span class="wrap-text">Pantaloni</span>
+      </a>
+      
+    </div>
+
+    
+  
+    
+    <div>
+      <a
+        href="#"
+        class="mega-menu__link "
+      >
+        
+        <span class="wrap-text">Abiti</span>
+      </a>
+      
+    </div>
+
+    
+  
+    
+    <div>
+      <a
+        href="#"
+        class="mega-menu__link "
+      >
+        
+        <span class="wrap-text">Gonne</span>
+      </a>
       
     </div>
 
@@ -9831,8 +9094,8 @@ none;
 
 <a class="mega-menu__promo" href="#">
                         <span class="mega-menu__promo-media">
-                          <img src="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9593.jpg?v=1783781737&amp;width=1000" alt="Novità" srcset="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9593.jpg?v=1783781737&amp;width=352 352w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9593.jpg?v=1783781737&amp;width=832 832w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9593.jpg?v=1783781737&amp;width=1000 1000w" width="1000" height="1549" loading="lazy" class="mega-menu__promo-image" sizes="500px">
-                        </span><span class="mega-menu__promo-eyebrow">Selezione AGO</span><span class="mega-menu__promo-title">Novità</span><span class="mega-menu__promo-text">I capi da non perdere questa stagione.</span></a></div>
+                          <img src="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9590_5b041836-8f27-44f4-a480-e3ac867178a7.jpg?v=1783782865&amp;width=1000" alt="Abbigliamento" srcset="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9590_5b041836-8f27-44f4-a480-e3ac867178a7.jpg?v=1783782865&amp;width=352 352w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9590_5b041836-8f27-44f4-a480-e3ac867178a7.jpg?v=1783782865&amp;width=832 832w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9590_5b041836-8f27-44f4-a480-e3ac867178a7.jpg?v=1783782865&amp;width=1000 1000w" width="1000" height="1501" loading="lazy" class="mega-menu__promo-image" sizes="500px">
+                        </span><span class="mega-menu__promo-eyebrow">Selezione AGO</span><span class="mega-menu__promo-title">Abbigliamento</span><span class="mega-menu__promo-text">I capi da non perdere questa stagione.</span></a></div>
                 </div>
               </div>
             </div></li>
@@ -9849,7 +9112,7 @@ none;
             
             ref="menuitem"
           >
-            <span class="menu-list__link-title">ABBIGLIAMENTO</span>
+            <span class="menu-list__link-title">INTIMO</span>
           </a><button
               type="button"
               class="menu-list__disclosure button-unstyled"
@@ -9859,7 +9122,7 @@ none;
               data-skip-node-update
               on:click="/toggle"
             >
-              <span class="visually-hidden">Mostra sottomenu ABBIGLIAMENTO</span>
+              <span class="visually-hidden">Mostra sottomenu INTIMO</span>
               <svg
                 class="menu-list__disclosure-icon"
                 aria-hidden="true"
@@ -9911,163 +9174,39 @@ none;
     <div>
       <a
         href="#"
-        class="mega-menu__link mega-menu__link--parent"
+        class="mega-menu__link "
       >
         
-        <span class="wrap-text">Capi</span>
+        <span class="wrap-text">Tutto l'intimo</span>
       </a>
-      
-        <ul
-          class="list-unstyled"
-          
-            style="column-count: 1;"
-          
-        >
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Tute</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Abiti</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Top</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Pantaloni</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Gonne</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Giacche</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Completi</span>
-              </a>
-            </li>
-          
-        </ul>
       
     </div>
 
-    </li>
+    
   
-    <li class="mega-menu__column mega-menu__column--span-1">
+    
     <div>
       <a
         href="#"
-        class="mega-menu__link mega-menu__link--parent"
+        class="mega-menu__link "
       >
         
-        <span class="wrap-text">In evidenza</span>
+        <span class="wrap-text">Bralette</span>
       </a>
       
-        <ul
-          class="list-unstyled"
-          
-            style="column-count: 1;"
-          
-        >
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Più venduti</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Novità</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Saldi</span>
-              </a>
-            </li>
-          
-        </ul>
+    </div>
+
+    
+  
+    
+    <div>
+      <a
+        href="#"
+        class="mega-menu__link "
+      >
+        
+        <span class="wrap-text">Micro bikini</span>
+      </a>
       
     </div>
 
@@ -10096,8 +9235,8 @@ none;
 
 <a class="mega-menu__promo" href="#">
                         <span class="mega-menu__promo-media">
-                          <img src="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9590_5b041836-8f27-44f4-a480-e3ac867178a7.jpg?v=1783782865&amp;width=1000" alt="Abbigliamento" srcset="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9590_5b041836-8f27-44f4-a480-e3ac867178a7.jpg?v=1783782865&amp;width=352 352w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9590_5b041836-8f27-44f4-a480-e3ac867178a7.jpg?v=1783782865&amp;width=832 832w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9590_5b041836-8f27-44f4-a480-e3ac867178a7.jpg?v=1783782865&amp;width=1000 1000w" width="1000" height="1501" loading="lazy" class="mega-menu__promo-image" sizes="500px">
-                        </span><span class="mega-menu__promo-eyebrow">Selezione AGO</span><span class="mega-menu__promo-title">Abbigliamento</span><span class="mega-menu__promo-text">I capi da non perdere questa stagione.</span></a></div>
+                          <img src="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9592_1d63d85b-f25f-4904-a07a-f2532202e060.jpg?v=1783782900&amp;width=1000" alt="Intimo" srcset="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9592_1d63d85b-f25f-4904-a07a-f2532202e060.jpg?v=1783782900&amp;width=352 352w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9592_1d63d85b-f25f-4904-a07a-f2532202e060.jpg?v=1783782900&amp;width=832 832w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9592_1d63d85b-f25f-4904-a07a-f2532202e060.jpg?v=1783782900&amp;width=1000 1000w" width="1000" height="1501" loading="lazy" class="mega-menu__promo-image" sizes="500px">
+                        </span><span class="mega-menu__promo-eyebrow">Selezione AGO</span><span class="mega-menu__promo-title">Intimo</span><span class="mega-menu__promo-text">I capi da non perdere questa stagione.</span></a></div>
                 </div>
               </div>
             </div></li>
@@ -10114,7 +9253,7 @@ none;
             
             ref="menuitem"
           >
-            <span class="menu-list__link-title">INTIMO</span>
+            <span class="menu-list__link-title">COLLEZIONI</span>
           </a><button
               type="button"
               class="menu-list__disclosure button-unstyled"
@@ -10124,7 +9263,7 @@ none;
               data-skip-node-update
               on:click="/toggle"
             >
-              <span class="visually-hidden">Mostra sottomenu INTIMO</span>
+              <span class="visually-hidden">Mostra sottomenu COLLEZIONI</span>
               <svg
                 class="menu-list__disclosure-icon"
                 aria-hidden="true"
@@ -10176,127 +9315,39 @@ none;
     <div>
       <a
         href="#"
-        class="mega-menu__link mega-menu__link--parent"
+        class="mega-menu__link "
       >
         
-        <span class="wrap-text">Intimo</span>
+        <span class="wrap-text">AGO</span>
       </a>
-      
-        <ul
-          class="list-unstyled"
-          
-            style="column-count: 1;"
-          
-        >
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Reggiseni</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Slip e perizomi</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Body</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Corsetti</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Calze</span>
-              </a>
-            </li>
-          
-        </ul>
       
     </div>
 
-    </li>
+    
   
-    <li class="mega-menu__column mega-menu__column--span-1">
+    
     <div>
       <a
         href="#"
-        class="mega-menu__link mega-menu__link--parent"
+        class="mega-menu__link "
       >
         
-        <span class="wrap-text">In evidenza</span>
+        <span class="wrap-text">‘’A’’ COLLECTION</span>
       </a>
       
-        <ul
-          class="list-unstyled"
-          
-            style="column-count: 1;"
-          
-        >
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Più venduti</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Novità</span>
-              </a>
-            </li>
-          
-        </ul>
+    </div>
+
+    
+  
+    
+    <div>
+      <a
+        href="#"
+        class="mega-menu__link "
+      >
+        
+        <span class="wrap-text">Tutti i prodotti</span>
+      </a>
       
     </div>
 
@@ -10325,354 +9376,11 @@ none;
 
 <a class="mega-menu__promo" href="#">
                         <span class="mega-menu__promo-media">
-                          <img src="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9592_1d63d85b-f25f-4904-a07a-f2532202e060.jpg?v=1783782900&amp;width=1000" alt="Intimo" srcset="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9592_1d63d85b-f25f-4904-a07a-f2532202e060.jpg?v=1783782900&amp;width=352 352w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9592_1d63d85b-f25f-4904-a07a-f2532202e060.jpg?v=1783782900&amp;width=832 832w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9592_1d63d85b-f25f-4904-a07a-f2532202e060.jpg?v=1783782900&amp;width=1000 1000w" width="1000" height="1501" loading="lazy" class="mega-menu__promo-image" sizes="500px">
-                        </span><span class="mega-menu__promo-eyebrow">Selezione AGO</span><span class="mega-menu__promo-title">Intimo</span><span class="mega-menu__promo-text">I capi da non perdere questa stagione.</span></a></div>
-                </div>
-              </div>
-            </div></li>
-      
-        <li
-          class="menu-list__list-item"
-          on:blur="/deactivate"
-          on:pointerenter="/activate"
-          on:pointerleave="/deactivate"
-        ><span class="menu-list__trigger"><a
-            href="#"
-            data-skip-node-update="true"
-            class="menu-list__link"
-            
-            ref="menuitem"
-          >
-            <span class="menu-list__link-title">ACCESSORI</span>
-          </a><button
-              type="button"
-              class="menu-list__disclosure button-unstyled"
-              aria-controls="submenu-4"
-              aria-expanded="false"
-              ref="disclosure[]"
-              data-skip-node-update
-              on:click="/toggle"
-            >
-              <span class="visually-hidden">Mostra sottomenu ACCESSORI</span>
-              <svg
-                class="menu-list__disclosure-icon"
-                aria-hidden="true"
-                focusable="false"
-                viewBox="0 0 10 6"
-              >
-
-<path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
-      fill="currentColor"
-    ></path></svg>
-            </button>
-            </span><div class="menu-list__submenu background-matches-parent" ref="submenu[]" data-skip-node-update inert>
-              <div
-                id="submenu-4"
-                class="menu-list__submenu-inner"
-                style="--menu-parent-font-family: var(--font-body--family); --menu-parent-font-style:
-var(--font-body--style); --menu-parent-font-weight: var(--font-body--weight); --menu-parent-font-case:
-none;
-
-    --menu-parent-font-size: var(--menu-font-sm--size); --menu-parent-font-line-height:
-    var(--menu-font-sm--line-height); --menu-parent-font-color: var(--color-foreground-subdued);
-    --menu-parent-active-font-color: var(--color-foreground);
-  
---menu-child-font-family: var(--font-body--family); --menu-child-font-style:var(--font-body--style); --menu-child-font-weight: var(--font-body--weight); --menu-child-font-case:
-none;
-
-    --menu-child-font-size: var(--menu-font-md--size); --menu-child-font-line-height: var(--menu-font-md--line-height);
-    --menu-child-font-color: var(--color-foreground); --menu-child-active-font-color: var(--color-foreground-subdued);
-  
-"
-              >
-                
-                <div class="mega-menu section section--full-width-margin section--full-width">
-                  <div
-                    class="mega-menu__grid mega-menu__grid--with-promo"
-                    data-menu-grid-id="MegaMenuList-4"
-                  >
-                    
-<ul
-  data-menu-list-id="MegaMenuList-4"
-  class="mega-menu__list list-unstyled"
-  style="--menu-image-border-radius: 0px;"
->
-  
-    <li class="mega-menu__column mega-menu__column--span-1">
-    <div>
-      <a
-        href="#"
-        class="mega-menu__link mega-menu__link--parent"
-      >
-        
-        <span class="wrap-text">Accessori</span>
-      </a>
-      
-        <ul
-          class="list-unstyled"
-          
-            style="column-count: 1;"
-          
-        >
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Borse</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Occhiali</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Gioielli</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Cappelli</span>
-              </a>
-            </li>
-          
-        </ul>
-      
-    </div>
-
-    </li>
-  
-</ul>
-
-
-
-<style data-shopify>
-  [data-menu-grid-id="MegaMenuList-4"] {
-    
-      --menu-columns-desktop: 6;
-      --menu-columns-tablet: 4;
-    
-  }
-
-  [data-menu-list-id="MegaMenuList-4"] {
-    
-      --menu-columns-desktop: 6;
-      --menu-columns-tablet: 4;
-    
-  }
-</style>
-
-
-<a class="mega-menu__promo" href="#">
-                        <span class="mega-menu__promo-media">
-                          <img src="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9589.jpg?v=1783781950&amp;width=1000" alt="Accessori" srcset="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9589.jpg?v=1783781950&amp;width=352 352w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9589.jpg?v=1783781950&amp;width=832 832w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9589.jpg?v=1783781950&amp;width=1000 1000w" width="1000" height="1501" loading="lazy" class="mega-menu__promo-image" sizes="500px">
-                        </span><span class="mega-menu__promo-eyebrow">Selezione AGO</span><span class="mega-menu__promo-title">Accessori</span><span class="mega-menu__promo-text">I capi da non perdere questa stagione.</span></a></div>
-                </div>
-              </div>
-            </div></li>
-      
-        <li
-          class="menu-list__list-item"
-          on:blur="/deactivate"
-          on:pointerenter="/activate"
-          on:pointerleave="/deactivate"
-        ><span class="menu-list__trigger"><a
-            href="#"
-            data-skip-node-update="true"
-            class="menu-list__link"
-            
-            ref="menuitem"
-          >
-            <span class="menu-list__link-title">COLLEZIONI</span>
-          </a><button
-              type="button"
-              class="menu-list__disclosure button-unstyled"
-              aria-controls="submenu-5"
-              aria-expanded="false"
-              ref="disclosure[]"
-              data-skip-node-update
-              on:click="/toggle"
-            >
-              <span class="visually-hidden">Mostra sottomenu COLLEZIONI</span>
-              <svg
-                class="menu-list__disclosure-icon"
-                aria-hidden="true"
-                focusable="false"
-                viewBox="0 0 10 6"
-              >
-
-<path
-      fill-rule="evenodd"
-      clip-rule="evenodd"
-      d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z"
-      fill="currentColor"
-    ></path></svg>
-            </button>
-            </span><div class="menu-list__submenu background-matches-parent" ref="submenu[]" data-skip-node-update inert>
-              <div
-                id="submenu-5"
-                class="menu-list__submenu-inner"
-                style="--menu-parent-font-family: var(--font-body--family); --menu-parent-font-style:
-var(--font-body--style); --menu-parent-font-weight: var(--font-body--weight); --menu-parent-font-case:
-none;
-
-    --menu-parent-font-size: var(--menu-font-sm--size); --menu-parent-font-line-height:
-    var(--menu-font-sm--line-height); --menu-parent-font-color: var(--color-foreground-subdued);
-    --menu-parent-active-font-color: var(--color-foreground);
-  
---menu-child-font-family: var(--font-body--family); --menu-child-font-style:var(--font-body--style); --menu-child-font-weight: var(--font-body--weight); --menu-child-font-case:
-none;
-
-    --menu-child-font-size: var(--menu-font-md--size); --menu-child-font-line-height: var(--menu-font-md--line-height);
-    --menu-child-font-color: var(--color-foreground); --menu-child-active-font-color: var(--color-foreground-subdued);
-  
-"
-              >
-                
-                <div class="mega-menu section section--full-width-margin section--full-width">
-                  <div
-                    class="mega-menu__grid mega-menu__grid--with-promo"
-                    data-menu-grid-id="MegaMenuList-5"
-                  >
-                    
-<ul
-  data-menu-list-id="MegaMenuList-5"
-  class="mega-menu__list list-unstyled"
-  style="--menu-image-border-radius: 0px;"
->
-  
-    <li class="mega-menu__column mega-menu__column--span-1">
-    <div>
-      <a
-        href="#"
-        class="mega-menu__link mega-menu__link--parent"
-      >
-        
-        <span class="wrap-text">Le collezioni</span>
-      </a>
-      
-        <ul
-          class="list-unstyled"
-          
-            style="column-count: 1;"
-          
-        >
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">AGO</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">‘’A’’ COLLECTION</span>
-              </a>
-            </li>
-          
-            
-            <li
-              
-            >
-              <a
-                href="#"
-                class="mega-menu__link"
-              >
-                <span class="wrap-text">Tutti i prodotti</span>
-              </a>
-            </li>
-          
-        </ul>
-      
-    </div>
-
-    </li>
-  
-</ul>
-
-
-
-<style data-shopify>
-  [data-menu-grid-id="MegaMenuList-5"] {
-    
-      --menu-columns-desktop: 6;
-      --menu-columns-tablet: 4;
-    
-  }
-
-  [data-menu-list-id="MegaMenuList-5"] {
-    
-      --menu-columns-desktop: 6;
-      --menu-columns-tablet: 4;
-    
-  }
-</style>
-
-
-<a class="mega-menu__promo" href="#">
-                        <span class="mega-menu__promo-media">
                           <img src="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9588.jpg?v=1783781973&amp;width=1000" alt="Le collezioni" srcset="https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9588.jpg?v=1783781973&amp;width=352 352w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9588.jpg?v=1783781973&amp;width=832 832w, https://cdn.shopify.com/s/files/1/0417/9755/0241/files/IMG_9588.jpg?v=1783781973&amp;width=1000 1000w" width="1000" height="1501" loading="lazy" class="mega-menu__promo-image" sizes="500px">
                         </span><span class="mega-menu__promo-eyebrow">Selezione AGO</span><span class="mega-menu__promo-title">Le collezioni</span><span class="mega-menu__promo-text">I capi da non perdere questa stagione.</span></a></div>
                 </div>
               </div>
             </div></li>
-      
-        <li
-          class="menu-list__list-item"
-          on:blur="/deactivate"
-          on:pointerenter="/activate"
-          on:pointerleave="/deactivate"
-        ><a
-            href="#"
-            data-skip-node-update="true"
-            class="menu-list__link"
-            
-            ref="menuitem"
-          >
-            <span class="menu-list__link-title">CHI SONO</span>
-          </a></li>
       
       <li
         class="menu-list__list-item"
@@ -17598,7 +16306,7 @@ none;
     <div
       class="account-button header-actions__action color-custom-popover"
     >
-      <shopify-store store-domain="https://3sjfcrxmusenrro3-41797550241.shopifypreview.com" country="IT" language="it"></shopify-store>
+      <shopify-store store-domain="https://agoriccione.com" country="IT" language="it"></shopify-store>
 <shopify-account
         menu="customer-account-main-menu"
         
